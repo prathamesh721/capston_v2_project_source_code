@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addProdToCart } from "../redux/cartSlice";
+import { addProdToCart , increaseCart, decreaseCart} from "../redux/cartSlice";
 import LoadingSpinner from "./LoadingSpinner";
 
 import share2 from "../Assets/Icons/share-2.svg";

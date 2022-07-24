@@ -1,14 +1,18 @@
 header {
  
   position: relative;
-  background-color: white;
+  background-color: $primary-brand;
   padding: 1em;
-  border-bottom: 1px solid black;
+  color: $white;
+  // border-bottom: 1px solid black;
   
 
   .logo {
+    
     letter-spacing: 0.25rem;
-    font-size: 1.5rem;
+    padding: 1em 0 0 5em;
+    
+    color: $white;
   }
 
   .logo.toggle {
@@ -23,7 +27,7 @@ header {
     div {
       width: 1.75rem;
       height: 0.25rem;
-      background-color: black;
+      background-color: $white;
       margin: 0.25rem;
       transition: transform 0.3s ease-in;
     }
@@ -70,6 +74,7 @@ header {
     a {
       text-decoration: none;
       @extend .regualr-body-m-16-;
+      color: $white;;
     }
   }
 
@@ -83,6 +88,7 @@ header {
   .headerOuter {
     @include flexJust;
     justify-content: space-between;
+    
     width: 90vw;
   }
 

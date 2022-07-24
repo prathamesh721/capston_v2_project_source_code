@@ -1,0 +1,37 @@
+.fourImgComp{
+    padding: 0.5em 0;
+    
+   text-align: center;
+   position: relative;
+   
+   display: flex;
+    align-items: center;
+   justify-content: center;
+   background-color: $white;
+   
+    img{
+        width: 30rem;
+        max-width: 85%;
+        height: 12rem;
+     
+            
+    }
+
+    .fourImgBanner{
+      
+        text-align: left;
+        background-color: black;
+        opacity: 0.5;
+        color: $white;
+        padding: 1em;
+        position: absolute;
+        bottom: 0%;
+        border-bottom: 10px solid $primary-brand;
+        max-width: 400px;
+
+        h2, p{
+            opacity: 1;
+        }
+        
+    }
+}

@@ -1,0 +1,216 @@
+.homeBanner {
+    display: flex;
+   
+
+    .homeInnerBanner {
+        display: flex;
+        width: 50%;
+
+
+        text-align: center;
+
+        color: black;
+        padding: 0;
+        // flex: 2;
+        background-color: #e5e5e7;
+        padding: 0 2em;
+
+        div {
+            display: flex;
+
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1em 0;
+
+            h2 {
+                @extend .display-l-36-;
+                width: 60%;
+                text-align: start;
+            }
+
+            p {
+                padding: 1em 0;
+                text-align: start;
+            }
+
+            button {
+
+                @extend .shopBtn;
+                color: $white;
+            }
+
+            .homeBannerImg {
+                background-image: url(../Assets/homepage_1.jpg);
+
+
+            }
+        }
+
+        img {
+            width: 0.75em;
+            padding: 1em;
+        }
+    }
+
+
+    img {
+        // flex: 2;
+        width: 50%;
+    }
+
+
+}
+
+/* ==============================Four Image Banner starts=================== */
+
+.fourImageOuter {
+    // height: 230px;
+    // position: relative;
+    
+   
+
+
+
+    .fourImageInner {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: -3em auto 3em auto;
+        // position: absolute;
+        // top: -25%;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // background-color: $white;
+
+
+
+    }
+}
+
+/* ==============================Take off Banner starts=================== */
+
+.takeoffOuter {
+    margin: 2em auto;
+    display: flex;
+
+    .takeoffInner {
+        width: 50%;
+        display: flex;
+
+        align-items: center;
+
+        h2 {
+            @extend .display-l-36-;
+            width: 70%;
+        }
+
+        p {
+            padding: 1em 0;
+            @extend .regualr-body-m-16-;
+        }
+
+        b {
+            @extend .regular-heading-m-16-;
+        }
+
+        button {
+            margin: 0.5em;
+            @extend .shopBtn;
+
+            color: $white;
+        }
+
+        .collectionBtn {
+            background-color: transparent;
+            color: $primary-brand;
+
+            border: 1px solid $primary-brand;
+        }
+
+        .maxHeader {
+            margin-top: 2em;
+            width: 15%;
+        }
+    }
+
+    img {
+        width: 50%;
+    }
+
+}
+
+/* ==============================Footer Banner starts=================== */
+
+.footerBanner {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 4em auto;
+   
+  
+  
+    img{
+       
+        width: calc( 60% - 1rem);
+
+    }
+
+
+
+    .footerBannerInner {
+    
+        background-color: black;
+        
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+
+
+
+        h2 {
+            @extend .display-l-36-;
+            color: $white;
+            text-align: center;
+            padding: 0 !important;
+
+
+
+        }
+
+        p {
+            @extend .regular-body-s-14-;
+            color: $white;
+
+            // margin: 1em 0;
+
+        }
+
+        .shopDevicesBtn {
+
+            @extend .shopBtn;
+            color: $white;
+            background: transparent;
+            border: 1px solid $white;
+            display: flex;
+            justify-content: start;
+
+        }
+
+
+    }
+
+    
+
+    .standingMan {
+        padding: 1em 0 1em 0;
+
+    }
+
+}
+

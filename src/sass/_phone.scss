@@ -1,4 +1,4 @@
-@media (min-width: 0px) and (max-width: 1200px) {
+@media (min-width: 0px) and (max-width: 767px) {
 
   .display-lmobile-36- {
     font-family: $unnamed-font-family-source-serif-pro;
@@ -10,11 +10,26 @@
     color: $unnamed-color-172026;
   }
 
+  .display-m-24-2 {
+    font-family: $unnamed-font-family-source-serif-pro;
+    font-style: $unnamed-font-style-normal;
+    font-weight: $unnamed-font-weight-600;
+    font-size: $unnamed-font-size-24;
+    line-height: $unnamed-line-spacing-30;
+    letter-spacing: $unnamed-character-spacing-0;
+    color: $unnamed-color-172026;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
   /* ==============================Header 2===================================*/
 
   header {
     .nav-links {
-     
+
       position: absolute;
       top: 9vh;
       height: 91vh;
@@ -29,14 +44,21 @@
       transform: translateY(-140%);
       transition: transform 0.5s ease-in;
       padding: 0;
+      color: black;
+
+      a {
+        color: black;
+      }
     }
 
     li {
       padding: 0.75em;
 
+
     }
 
     .logo {
+      padding: 0.5em 0;
       position: absolute;
       top: 20%;
       left: 50%;
@@ -81,10 +103,11 @@
       position: absolute;
       bottom: 2%;
       @include flexJust;
-     justify-content: start;
+      justify-content: start;
 
       a {
         padding: 0 1em;
+        color: black;
       }
 
       img {
@@ -92,6 +115,161 @@
       }
     }
   }
+
+  /* ==============================HOme page===================================*/
+
+  .homeBanner {
+    flex-direction: column-reverse;
+    position: relative;
+    // height: 90vh;
+   
+
+
+
+
+    .homeInnerBanner {
+      // margin: -20em auto auto auto;
+      position: absolute;
+      // background-image: linear-gradient(to right, rgba(229,229,231,0.4));
+      background-image: linear-gradient(to bottom, rgba(299, 299, 231, 0), rgba(299, 299, 231, 1));
+      // background-color: rgba(229,229,231,0.4);
+      opacity: 0.5;
+      bottom: 0;
+      // width: 90vw;
+      width: auto;
+
+      div {
+        padding: 0.5em;
+
+
+        h2 {
+          // @extend .display-m-24-2;
+          width: 100%;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        button {
+          margin: auto;
+          margin-bottom: 0.25em;
+        }
+
+        .homeBannerImg {
+          background-image: url(../Assets/homepage_1.jpg);
+          background-size: cover;
+        }
+      }
+    }
+    img{
+      width: 100%;
+      height: 90vh;
+    }
+
+  }
+
+  .mobileHide2 {
+    display: none;
+  }
+
+  .fourImageOuter {
+   
+    // height: 80rem;
+    margin: auto;
+    // width: 95%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4em;
+
+    .fourImageInner {
+      padding: 1em 0;
+      flex-direction: column;
+      align-items: center;
+         
+      width: 90%;
+      max-width: 100%;
+      margin:  auto;
+     
+
+
+    }
+  }
+
+
+  /* ==============================FourImage===================================*/
+  .fourImgComp {
+    margin: 0;
+    margin-top: 3em;
+    position: relative;
+
+    img {
+      width: 300px;
+      
+    }
+
+    .fourImgBanner {
+      position: absolute;
+      bottom: -7%;
+      width: 100%;
+
+    }
+  }
+
+  /* ==============================Take off Banner starts=================== */
+
+  .takeoffOuter {
+    flex-direction: column-reverse;
+
+    .takeoffInner {
+      width: 100%;
+      text-align: center;
+
+
+      h2 {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* ==============================Footer Banner starts=================== */
+  .footerBanner {
+    flex-direction: column-reverse;
+    // margin-bottom: 3rem;
+    
+    
+    .standingMan {
+     padding: 0;
+     width: 100%;
+
+    }
+
+    .footerBannerInner {
+      width: 95%;
+      
+    //   align-items: center;
+    margin: -2rem auto 2rem auto;
+      
+      
+    //   h2 {
+    //     text-align: center;
+    //   }
+      p{
+        padding-top: 1em;
+      }
+      button{
+        margin: 2em 0;
+      }
+    }
+  }
+
 
 
   /* ==============================Hero Banner===================================*/
@@ -112,7 +290,7 @@
       width: 75%;
 
       h2 {
-        @extend .display-lmobile-36-;
+        // @extend .display-lmobile-36-;
         color: $white;
 
         padding: 0 0 1em 0;
@@ -128,7 +306,7 @@
   /*============================Product List============================*/
 
   .produFilters {
-    
+
     padding: 2em 0 1em 0;
     @include flexJust;
     justify-content: space-around;
@@ -153,7 +331,7 @@
     }
 
     .ui.cards>.card>.image>img {
-      
+
       width: 90%;
     }
   }
@@ -185,7 +363,7 @@
   }
 
   /*============================Shopping Cart ============================*/
-  
+
 
   .sharingOption {
     display: none;
@@ -208,7 +386,7 @@
     text-align: center;
   }
 
- 
+
 
   /*============================Product Details============================*/
 

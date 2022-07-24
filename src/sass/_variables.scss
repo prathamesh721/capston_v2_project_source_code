@@ -78,12 +78,18 @@ button:hover {
   margin: auto;
 }
 
+.container{
+  width: 75%;
+  margin: auto;
+}
+
+
 
 /* Colors: */
-$primary-d1: #172BC4;
-$primary-m1: #336DFF;
-$primary-brand: #1F39FF;
-$primary-l1: #3D84FF;
+$primary-d1: #47B5FF;
+$primary-m1: #06283D;
+$primary-brand: #1363DF;
+$primary-l1: #DFF6FF;
 $gray-d2: #181C24;
 $gray-d1: #535965;
 $gray-m1: #91959C;
@@ -138,4 +144,14 @@ $value in $colorsPanel {
   display: flex;
   justify-content: center;
 
+}
+
+.shopBtn {
+  @extend .regular-body-s-14-;
+  background-color: $primary-brand;
+  color: $white;
+  padding: 0.5em 2em;
+  border-radius: 0.25em;
+  border: none;
+  outline: none;
 }

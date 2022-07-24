@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import ProductDetails from "./components/ProductDetails";
 import ShoppingCart from "./components/ShoppingCart";
 import Header2 from "./components/Header2";
-import { ToastContainer } from "react-toastify";
+import Home from "./components/Home";
 
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
           element={<ProductDetails />}
         />
         <Route path="/ezest_assessment_2_v2/cart" exact element={<ShoppingCart />} />
-        <Route path="/" exact element={<BodyComponent />} />
+        <Route path="/ezest_assessment_2_v2/shop" exact element={<BodyComponent />} />
+        <Route path="/" exact element={<Home />} />
         
       </Routes>
 

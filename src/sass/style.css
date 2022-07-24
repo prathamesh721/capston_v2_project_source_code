@@ -5185,6 +5185,11 @@ button:hover {
   margin: auto;
 }
 
+.container {
+  width: 75%;
+  margin: auto;
+}
+
 /* Colors: */
 .bg-charcoal {
   background-color: #172026;
@@ -5203,7 +5208,7 @@ button:hover {
 }
 
 .bg-light-blue {
-  background-color: #3D84FF;
+  background-color: #DFF6FF;
 }
 
 .bg-light-red {
@@ -5222,22 +5227,18 @@ button:hover {
   background-color: #EB7327;
 }
 
+.shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn {
+  background-color: #1363DF;
+  color: #FFFFFF;
+  padding: 0.5em 2em;
+  border-radius: 0.25em;
+  border: none;
+  outline: none;
+}
+
 @font-face {
   font-family: Muli;
-  src: url(../Assets/fonts/Muli-Black.ttf);
-  src: url(../Assets/fonts/Muli-BlackItalic.ttf);
-  src: url(../Assets/fonts/Muli-Bold.ttf);
-  src: url(../Assets/fonts/Muli-BoldItalic.ttf);
-  src: url(../Assets/fonts/Muli-ExtraBold.ttf);
-  src: url(../Assets/fonts/Muli-ExtraBoldItalic.ttf);
-  src: url(../Assets/fonts/Muli-ExtraLight.ttf);
-  src: url(../Assets/fonts/Muli-ExtraLightItalic.ttf);
-  src: url(../Assets/fonts/Muli-Italic.ttf);
-  src: url(../Assets/fonts/Muli-Light.ttf);
-  src: url(../Assets/fonts/Muli-LightItalic.ttf);
   src: url(../Assets/fonts/Muli-Regular.ttf);
-  src: url(../Assets/fonts/Muli-SemiBold.ttf);
-  src: url(../Assets/fonts/Muli-SemiBoldItalic.ttf);
 }
 
 /* Font/text values */
@@ -5252,7 +5253,7 @@ button:hover {
   color: #172026;
 }
 
-.display-l-36-, .prodDetailsText h1 {
+.display-l-36-, .homeBanner .homeInnerBanner div h2, .takeoffOuter .takeoffInner h2, .footerBanner .footerBannerInner h2, .prodDetailsText h1 {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600px;
@@ -5302,7 +5303,7 @@ button:hover {
   color: #172026;
 }
 
-.regular-heading-m-16- {
+.regular-heading-m-16-, .takeoffOuter .takeoffInner b {
   font-family: Muli;
   font-style: normal;
   font-weight: 600px;
@@ -5332,7 +5333,7 @@ button:hover {
   color: #172026;
 }
 
-.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .sideBar .firstHead, .sideBar .sideHeading, .sideBar .py05 label, .prodDetailsText .desc, footer a,
+.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .firstHead, .sideBar .sideHeading, .sideBar .py05 label, .prodDetailsText .desc, footer a,
 footer p,
 footer li {
   font-family: Muli;
@@ -5344,7 +5345,7 @@ footer li {
   color: #172026;
 }
 
-.regular-body-s-14-, .content {
+.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .footerBanner .footerBannerInner p, .content {
   font-family: Muli;
   font-style: normal;
   font-weight: normal;
@@ -5376,14 +5377,15 @@ footer li {
 
 header {
   position: relative;
-  background-color: white;
+  background-color: #1363DF;
   padding: 1em;
-  border-bottom: 1px solid black;
+  color: #FFFFFF;
 }
 
 header .logo {
   letter-spacing: 0.25rem;
-  font-size: 1.5rem;
+  padding: 1em 0 0 5em;
+  color: #FFFFFF;
 }
 
 header .logo.toggle {
@@ -5399,7 +5401,7 @@ header .burger {
 header .burger div {
   width: 1.75rem;
   height: 0.25rem;
-  background-color: black;
+  background-color: #FFFFFF;
   margin: 0.25rem;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
@@ -5449,6 +5451,7 @@ header .nav-links li {
 
 header .nav-links a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 header .bottomLinks {
@@ -5482,6 +5485,225 @@ header .endHeader {
 
 header .endHeader img {
   padding: 0 0.37em;
+}
+
+.homeBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeBanner .homeInnerBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  text-align: center;
+  color: black;
+  padding: 0;
+  background-color: #e5e5e7;
+  padding: 0 2em;
+}
+
+.homeBanner .homeInnerBanner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: flex-start;
+  padding: 1em 0;
+}
+
+.homeBanner .homeInnerBanner div h2 {
+  width: 60%;
+  text-align: start;
+}
+
+.homeBanner .homeInnerBanner div p {
+  padding: 1em 0;
+  text-align: start;
+}
+
+.homeBanner .homeInnerBanner div button {
+  color: #FFFFFF;
+}
+
+.homeBanner .homeInnerBanner div .homeBannerImg {
+  background-image: url(../Assets/homepage_1.jpg);
+}
+
+.homeBanner .homeInnerBanner img {
+  width: 0.75em;
+  padding: 1em;
+}
+
+.homeBanner img {
+  width: 50%;
+}
+
+/* ==============================Four Image Banner starts=================== */
+.fourImageOuter .fourImageInner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -3em auto 3em auto;
+}
+
+/* ==============================Take off Banner starts=================== */
+.takeoffOuter {
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.takeoffOuter .takeoffInner {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.takeoffOuter .takeoffInner h2 {
+  width: 70%;
+}
+
+.takeoffOuter .takeoffInner p {
+  padding: 1em 0;
+}
+
+.takeoffOuter .takeoffInner button {
+  margin: 0.5em;
+  color: #FFFFFF;
+}
+
+.takeoffOuter .takeoffInner .collectionBtn {
+  background-color: transparent;
+  color: #1363DF;
+  border: 1px solid #1363DF;
+}
+
+.takeoffOuter .takeoffInner .maxHeader {
+  margin-top: 2em;
+  width: 15%;
+}
+
+.takeoffOuter img {
+  width: 50%;
+}
+
+/* ==============================Footer Banner starts=================== */
+.footerBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 4em auto;
+}
+
+.footerBanner img {
+  width: calc( 60% - 1rem);
+}
+
+.footerBanner .footerBannerInner {
+  background-color: black;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footerBanner .footerBannerInner h2 {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.footerBanner .footerBannerInner p {
+  color: #FFFFFF;
+}
+
+.footerBanner .footerBannerInner .shopDevicesBtn {
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footerBanner .standingMan {
+  padding: 1em 0 1em 0;
+}
+
+.fourImgComp {
+  padding: 0.5em 0;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.fourImgComp img {
+  width: 30rem;
+  max-width: 85%;
+  height: 12rem;
+}
+
+.fourImgComp .fourImgBanner {
+  text-align: left;
+  background-color: black;
+  opacity: 0.5;
+  color: #FFFFFF;
+  padding: 1em;
+  position: absolute;
+  bottom: 0%;
+  border-bottom: 10px solid #1363DF;
+  max-width: 400px;
+}
+
+.fourImgComp .fourImgBanner h2, .fourImgComp .fourImgBanner p {
+  opacity: 1;
 }
 
 @-webkit-keyframes spinner {
@@ -5554,7 +5776,7 @@ header .endHeader img {
   margin: auto;
   height: 0.5rem;
   width: 10rem;
-  background-color: #1F39FF;
+  background-color: #1363DF;
   border-radius: 0.25rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5677,7 +5899,7 @@ header .endHeader img {
   margin: auto;
   height: 0.5rem;
   width: 7rem;
-  background-color: #1F39FF;
+  background-color: #1363DF;
   border-radius: 0.25rem;
 }
 
@@ -5746,7 +5968,7 @@ header .endHeader img {
 }
 
 .shoppingCart .checkOutBtn {
-  background-color: #1F39FF;
+  background-color: #1363DF;
   color: #FFFFFF;
   border-radius: 1.75em;
   padding: 0.25em 2em;
@@ -5764,7 +5986,7 @@ header .endHeader img {
 }
 
 .shoppingCart .checkOutBtn:active {
-  background-color: #172BC4;
+  background-color: #47B5FF;
 }
 
 .shoppingCart .checkOutBtn img {
@@ -6006,7 +6228,7 @@ a {
 
 .prodDetailsText .AddToCart {
   border: none;
-  background-color: #1F39FF;
+  background-color: #1363DF;
   border-radius: 1.75em;
   width: 19.875rem;
   height: 2.5rem;
@@ -6015,7 +6237,7 @@ a {
 }
 
 .prodDetailsText .AddToCart:active {
-  background-color: #172BC4;
+  background-color: #47B5FF;
 }
 
 .colorSwatches {
@@ -6176,6 +6398,7 @@ a {
 }
 
 footer {
+  clear: both;
   border-top: 1px solid black;
   padding: 2em;
 }
@@ -6206,8 +6429,8 @@ footer .lowerFooter li {
   padding: 0 0.5em;
 }
 
-@media (min-width: 0px) and (max-width: 1200px) {
-  .display-lmobile-36-, .heroBanner .heroInnerBanner h2 {
+@media (min-width: 0px) and (max-width: 767px) {
+  .display-lmobile-36- {
     font-family: Source Serif Pro;
     font-style: normal;
     font-weight: 600px;
@@ -6215,6 +6438,19 @@ footer .lowerFooter li {
     line-height: 45px;
     letter-spacing: 0px;
     color: #172026;
+  }
+  .display-m-24-2 {
+    font-family: Source Serif Pro;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #172026;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
   }
   /* ==============================Header 2===================================*/
   header .nav-links {
@@ -6245,11 +6481,16 @@ footer .lowerFooter li {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     padding: 0;
+    color: black;
+  }
+  header .nav-links a {
+    color: black;
   }
   header li {
     padding: 0.75em;
   }
   header .logo {
+    padding: 0.5em 0;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -6296,9 +6537,123 @@ footer .lowerFooter li {
   }
   header .bottomLinks a {
     padding: 0 1em;
+    color: black;
   }
   header .bottomLinks img {
     padding: 0 0 1.5em 1em;
+  }
+  /* ==============================HOme page===================================*/
+  .homeBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+  }
+  .homeBanner .homeInnerBanner {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 231, 0)), to(#ffffe7));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 231, 0), #ffffe7);
+    opacity: 0.5;
+    bottom: 0;
+    width: auto;
+  }
+  .homeBanner .homeInnerBanner div {
+    padding: 0.5em;
+  }
+  .homeBanner .homeInnerBanner div h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .homeBanner .homeInnerBanner div p {
+    text-align: center;
+  }
+  .homeBanner .homeInnerBanner div button {
+    margin: auto;
+    margin-bottom: 0.25em;
+  }
+  .homeBanner .homeInnerBanner div .homeBannerImg {
+    background-image: url(../Assets/homepage_1.jpg);
+    background-size: cover;
+  }
+  .homeBanner img {
+    width: 100%;
+    height: 90vh;
+  }
+  .mobileHide2 {
+    display: none;
+  }
+  .fourImageOuter {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  .fourImageOuter .fourImageInner {
+    padding: 1em 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+  }
+  /* ==============================FourImage===================================*/
+  .fourImgComp {
+    margin: 0;
+    margin-top: 3em;
+    position: relative;
+  }
+  .fourImgComp img {
+    width: 300px;
+  }
+  .fourImgComp .fourImgBanner {
+    position: absolute;
+    bottom: -7%;
+    width: 100%;
+  }
+  /* ==============================Take off Banner starts=================== */
+  .takeoffOuter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .takeoffOuter .takeoffInner {
+    width: 100%;
+    text-align: center;
+  }
+  .takeoffOuter .takeoffInner h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .takeoffOuter img {
+    width: 100%;
+  }
+  /* ==============================Footer Banner starts=================== */
+  .footerBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footerBanner .standingMan {
+    padding: 0;
+    width: 100%;
+  }
+  .footerBanner .footerBannerInner {
+    width: 95%;
+    margin: -2rem auto 2rem auto;
+  }
+  .footerBanner .footerBannerInner p {
+    padding-top: 1em;
+  }
+  .footerBanner .footerBannerInner button {
+    margin: 2em 0;
   }
   /* ==============================Hero Banner===================================*/
   .heroBanner {
@@ -6429,11 +6784,355 @@ footer .lowerFooter li {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  /*============================SideBar============================*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .display-lmobile-36- {
+    font-family: Source Serif Pro;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0px;
+    color: #172026;
+  }
+  .display-m-24-2 {
+    font-family: Source Serif Pro;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #172026;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  /* ==============================Header 2===================================*/
+  header .nav-links {
+    position: absolute;
+    top: 9vh;
+    height: 91vh;
+    width: 100vw;
+    left: 0;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    z-index: 3;
+    -webkit-transform: translateY(-140%);
+            transform: translateY(-140%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    padding: 0;
+    color: black;
+  }
+  header .nav-links a {
+    color: black;
+  }
+  header li {
+    padding: 0.75em;
+  }
+  header .logo {
+    padding: 0.5em 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  header .hideLogo {
+    display: none;
+  }
+  header #inputSearch {
+    width: 100%;
+    z-index: 5;
+  }
+  header .mobileHide {
+    display: none;
+  }
+  header .desktopHide {
+    display: block;
+  }
+  header .burger {
+    display: block;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  header .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  header .bottomLinks {
+    padding: 0.5em 0;
+    border-top: 1px solid black;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  header .bottomLinks a {
+    padding: 0 1em;
+    color: black;
+  }
+  header .bottomLinks img {
+    padding: 0 0 1.5em 1em;
+  }
+  /* ==============================HOme page===================================*/
+  .homeBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .homeBanner .homeInnerBanner {
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 231, 0)), to(#ffffe7));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 231, 0), #ffffe7);
+    opacity: 0.5;
+    bottom: 0;
+    width: auto;
+  }
+  .homeBanner .homeInnerBanner div {
+    padding: 0.5;
+  }
+  .homeBanner .homeInnerBanner div h2 {
+    /* @extend .display-m-24-2;*/
+    width: 100%;
+    text-align: center;
+  }
+  .homeBanner .homeInnerBanner div p {
+    text-align: center;
+  }
+  .homeBanner .homeInnerBanner div button {
+    margin: auto;
+    margin-bottom: 0.25em;
+  }
+  .homeBanner .homeInnerBanner div .homeBannerImg {
+    background-image: url(../Assets/homepage_1.jpg);
+    background-size: cover;
+  }
+  .homeBanner img {
+    width: 100%;
+    height: 90vh;
+  }
+  .mobileHide2 {
+    display: none;
+  }
+  .fourImageOuter {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  .fourImageOuter .fourImageInner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+  }
+  /* ==============================FourImage===================================*/
+  .fourImgComp {
+    margin: 0;
+    margin-top: 3em;
+    position: relative;
+  }
+  .fourImgComp img {
+    width: 300px;
+  }
+  .fourImgComp .fourImgBanner {
+    width: 100%;
+    position: absolute;
+    bottom: -7%;
+  }
+  /* ==============================Take off Banner starts=================== */
+  .takeoffOuter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .takeoffOuter .takeoffInner {
+    width: 100%;
+    text-align: center;
+  }
+  .takeoffOuter .takeoffInner h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .takeoffOuter img {
+    width: 100%;
+  }
+  /* ==============================Footer Banner starts=================== */
+  .footerBanner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footerBanner .standingMan {
+    padding: 0;
+    width: 100%;
+  }
+  .footerBanner .footerBannerInner {
+    width: 95%;
+    margin: -2rem auto 2rem auto;
+  }
+  .footerBanner .footerBannerInner p {
+    padding-top: 1em;
+  }
+  .footerBanner .footerBannerInner button {
+    margin: 2em 0;
+  }
+  /* ==============================Hero Banner===================================*/
+  .heroBanner {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .heroBanner .heroInnerBanner {
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: auto;
+    width: 75%;
+  }
+  .heroBanner .heroInnerBanner h2 {
+    color: #FFFFFF;
+    padding: 0 0 1em 0;
+  }
+  .heroBanner img {
+    padding: 1em 1em 0em 1em;
+    margin-bottom: 5em;
+  }
   /*============================Product List============================*/
+  .produFilters {
+    padding: 2em 0 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .produFilters div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .produFilters div img {
+    padding: 0 0.5em;
+  }
+  * .ui.cards > .card > .image {
+    /* height: 250px; */
+    height: 5rem;
+    padding: 0;
+  }
   * .ui.cards > .card > .image > img {
-    width: 65%;
+    width: 90%;
+  }
+  /*============================SideBar============================*/
+  .sideBar {
+    margin-top: 1em;
+  }
+  .sideBar .crossHide {
+    display: block;
+  }
+  .sideBarToggle {
+    display: none;
+    -webkit-transition: -webkit-transform 0.8s ease-in;
+    transition: -webkit-transform 0.8s ease-in;
+    transition: transform 0.8s ease-in;
+    transition: transform 0.8s ease-in, -webkit-transform 0.8s ease-in;
+    -webkit-transform: translateX(-140%);
+            transform: translateX(-140%);
+  }
+  .sideBar-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    display: block;
+  }
+  /*============================Shopping Cart ============================*/
+  .sharingOption {
+    display: none;
+  }
+  .cartBtn {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  .sharingOuter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .leftSideCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  /*============================Product Details============================*/
+  .imgCarousal {
+    display: none;
+  }
+  /* ==============================Footer===================================*/
+  .lowerFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
