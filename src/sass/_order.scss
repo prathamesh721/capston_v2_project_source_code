@@ -1,0 +1,83 @@
+.OrderDiv{
+    padding: 0 0 3em 0;
+    .OrderHeading{
+        
+        h2{
+            @extend .display-l-36-;
+        }
+    }
+    .orderNumber{
+        @extend .display-s-20-;
+    }
+    
+    p{
+        @extend .regualr-body-m-16-;
+        color: $gray-d1;
+    }
+
+    .infoHeading{
+        @extend .regualr-body-m-16-;
+        
+        color: $unnamed-color-172026;
+         font-weight: bold;
+    }
+    .paddingLeft1em{
+        padding-left: 1em;
+    }
+    .OrderHeading{
+      text-align: center;
+      padding: 1.5em 0;
+    }
+    
+    h3{
+        @extend .regular-body-l-20-;
+    }
+    .infoHeading{
+        @extend .regular-body-s-14-;
+        color: $unnamed-color-172026;
+        // font-weight: bold;
+    }
+
+    .productDesc{
+        display: flex;
+
+        img{
+            width: 20%;
+            height: 5rem;
+            padding-right: 0.75em;
+        }
+    }
+
+    .boxDiv{ 
+        position: relative;
+        height: 12rem;
+        width: 15rem;
+        background-color: $primary-d1;
+        border-radius: 0.125rem;
+        text-align: center;
+        padding: 1.5em 1em 0 1em;
+       
+        p{
+            @extend .display-m-24-;
+            color: $white;
+        }
+        .iconDiv{
+            width: 100%;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img{
+                padding: 0 1em;
+                
+            }
+        }
+    }
+    .orderTitle{
+        overflow: hidden;
+        max-width: 10rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

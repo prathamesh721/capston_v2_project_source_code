@@ -59,7 +59,7 @@
 
         @include flexAlignJust;
         justify-content: space-around;
-
+        flex-direction: column;
         align-content: center
     }
 

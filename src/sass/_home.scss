@@ -55,9 +55,13 @@
     }
 
 
-    img {
+    .homeImage {
         // flex: 2;
         width: 50%;
+        height: 25rem;
+        object-fit: cover;
+        object-position: 15% 30%;
+
     }
 
 
@@ -136,8 +140,12 @@
         }
     }
 
-    img {
+    .manwithGoggles {
         width: 50%;
+        height: 22rem;
+        object-fit: cover;
+        object-position: 15% 30%;
+        
     }
 
 }

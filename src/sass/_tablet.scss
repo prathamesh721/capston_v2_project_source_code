@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
   .display-lmobile-36- {
     font-family: $unnamed-font-family-source-serif-pro;
@@ -272,20 +272,14 @@
 
   /* ==============================Hero Banner===================================*/
   .heroBanner {
-
-    position: relative;
     flex-direction: column-reverse;
+    padding: 0;
 
     .heroInnerBanner {
-      padding: 1em;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%);
+      padding: 1em 0;
+      margin: -1em 0.5em 0 0.5em;
 
-      margin: auto;
-
-      width: 75%;
+      width: calc(100% - 1em);
 
       h2 {
         // @extend .display-lmobile-36-;
@@ -293,14 +287,16 @@
 
         padding: 0 0 1em 0;
       }
+      div {
+        margin-bottom: 0.25em;
+      }
     }
 
     img {
-      padding: 1em 1em 0em 1em;
-      margin-bottom: 5em;
+      padding: 0;
+      width: 100%;
     }
   }
-
   /*============================Product List============================*/
 
   .produFilters {
@@ -391,6 +387,15 @@
   .imgCarousal {
     display: none;
   }
+
+
+
+   /* ==============================Checkout===================================*/
+
+   .checkoutFlex{
+    flex-direction: column;
+  }
+
 
   /* ==============================Footer===================================*/
   .lowerFooter {

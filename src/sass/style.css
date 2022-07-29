@@ -5140,6 +5140,14 @@ button:hover {
   padding: 1em;
 }
 
+.py-25 {
+  padding: 0.25em 0;
+}
+
+.py-05 {
+  padding: 0.5em 0;
+}
+
 .py-1 {
   padding: 1em 0;
 }
@@ -5227,7 +5235,7 @@ button:hover {
   background-color: #EB7327;
 }
 
-.shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn {
+.shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .checkout .shippingMethodBtn, .chekoutProdBtnDiv .chekoutProdBtn {
   background-color: #1363DF;
   color: #FFFFFF;
   padding: 0.5em 2em;
@@ -5253,7 +5261,7 @@ button:hover {
   color: #172026;
 }
 
-.display-l-36-, .homeBanner .homeInnerBanner div h2, .takeoffOuter .takeoffInner h2, .footerBanner .footerBannerInner h2, .prodDetailsText h1 {
+.display-l-36-, .homeBanner .homeInnerBanner div h2, .takeoffOuter .takeoffInner h2, .footerBanner .footerBannerInner h2, .prodDetailsText h1, .checkout h2, .OrderDiv .OrderHeading h2 {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600px;
@@ -5263,7 +5271,7 @@ button:hover {
   color: #172026;
 }
 
-.display-m-24- {
+.display-m-24-, .checkout h3, .OrderDiv .boxDiv p {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600px;
@@ -5273,7 +5281,7 @@ button:hover {
   color: #172026;
 }
 
-.display-s-20- {
+.display-s-20-, .OrderDiv .orderNumber {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600px;
@@ -5293,7 +5301,7 @@ button:hover {
   color: #172026;
 }
 
-.regular-heading-l-20- {
+.regular-heading-l-20-, .checkout .checkOutPadding {
   font-family: Muli;
   font-style: normal;
   font-weight: 600px;
@@ -5303,7 +5311,7 @@ button:hover {
   color: #172026;
 }
 
-.regular-heading-m-16-, .takeoffOuter .takeoffInner b {
+.regular-heading-m-16-, .takeoffOuter .takeoffInner b, .checkout label {
   font-family: Muli;
   font-style: normal;
   font-weight: 600px;
@@ -5323,7 +5331,7 @@ button:hover {
   color: #172026;
 }
 
-.regular-body-l-20-, .prodDetailsText h2 {
+.regular-body-l-20-, .prodDetailsText h2, .checkout .pricingSummaryDiv .priceSumTitle, .OrderDiv h3 {
   font-family: Muli;
   font-style: normal;
   font-weight: normal;
@@ -5333,7 +5341,7 @@ button:hover {
   color: #172026;
 }
 
-.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .firstHead, .sideBar .sideHeading, .sideBar .py05 label, .prodDetailsText .desc, footer a,
+.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .firstHead, .sideBar .sideHeading, .sideBar .py05 label, .prodDetailsText .desc, .checkout .pricingSummaryDiv li, .OrderDiv p, .OrderDiv .infoHeading, footer a,
 footer p,
 footer li {
   font-family: Muli;
@@ -5345,7 +5353,7 @@ footer li {
   color: #172026;
 }
 
-.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .footerBanner .footerBannerInner p, .content {
+.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .checkout .shippingMethodBtn, .chekoutProdBtnDiv .chekoutProdBtn, .footerBanner .footerBannerInner p, .content, .OrderDiv .infoHeading {
   font-family: Muli;
   font-style: normal;
   font-weight: normal;
@@ -5546,8 +5554,13 @@ header .endHeader img {
   padding: 1em;
 }
 
-.homeBanner img {
+.homeBanner .homeImage {
   width: 50%;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 15% 30%;
+     object-position: 15% 30%;
 }
 
 /* ==============================Four Image Banner starts=================== */
@@ -5604,8 +5617,13 @@ header .endHeader img {
   width: 15%;
 }
 
-.takeoffOuter img {
+.takeoffOuter .manwithGoggles {
   width: 50%;
+  height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 15% 30%;
+     object-position: 15% 30%;
 }
 
 /* ==============================Footer Banner starts=================== */
@@ -5758,37 +5776,40 @@ header .endHeader img {
   display: -ms-flexbox;
   display: flex;
   padding: 1em;
+  margin: auto;
 }
 
 .heroBanner .heroInnerBanner {
-  position: relative;
-  text-align: center;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
   padding: 1em 1em 1em 1em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: black;
+  width: 30%;
 }
 
 .heroBanner .heroInnerBanner div {
-  position: absolute;
   margin: auto;
   height: 0.5rem;
   width: 10rem;
   background-color: #1363DF;
   border-radius: 0.25rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 25%;
 }
 
 .heroBanner img {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  padding: 1em 1em 1em 0;
+  width: 70%;
+  padding: 1em 0 1em 0;
 }
 
 .CheckBoxContainer input {
@@ -5921,6 +5942,10 @@ header .endHeader img {
           justify-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -6397,6 +6422,297 @@ a {
   border: none;
 }
 
+.checkout {
+  padding: 0;
+  padding: 2em;
+  /*===============================Cart summary============================*/
+}
+
+.checkout .checkoutContainer {
+  margin: auto;
+  width: 80%;
+}
+
+.checkout input[type="radio"], .checkout input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.checkout input[type="text"], .checkout input[type="number"], .checkout input[type="email"] {
+  border: 1px solid #91959C;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  width: 18rem;
+}
+
+.checkout #stateNzip {
+  width: 19rem;
+  text-align: left;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkout #stateInput {
+  width: 8rem;
+  position: absolute;
+  left: 0;
+}
+
+.checkout #zipInput {
+  width: 6rem;
+  position: absolute;
+  right: 0;
+}
+
+.checkout .secondInput label {
+  padding-right: 2rem;
+}
+
+.checkout h3 {
+  padding: 0.5em 0;
+}
+
+.checkout p {
+  padding: 0.25em 0;
+}
+
+.checkout .checkoutHeading {
+  text-align: center;
+}
+
+.checkout label {
+  display: block;
+  padding: 0.25em 0;
+  color: #181C24;
+  width: 18rem;
+}
+
+.checkout .checkoutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout .shippingMethodClassBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkout .shippingMethodBtn {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #1363DF;
+  border: 1px solid #1363DF;
+  margin: 1.5em 0;
+}
+
+.checkout .hideContent {
+  display: none;
+}
+
+.checkout .cartSummaryCheckout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout .pricingSummaryDiv {
+  margin-top: 3.37em;
+  border: 1px solid #91959C;
+  padding: 1em;
+  border-radius: 0.125em;
+}
+
+.checkout .pricingSummaryDiv .priceSumTitle {
+  padding: 0.125em 0;
+}
+
+.checkout .pricingSummaryDiv li {
+  padding: 0.125em 0;
+}
+
+.checkout .expressCheckoutDive {
+  border: 1px solid #91959C;
+  padding: 0 1em;
+  margin-top: 1em;
+  border-radius: 0.125em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout .expressCheckoutDive strong {
+  width: 50%;
+}
+
+.checkout .checkOutPadding {
+  padding: 0.75em 0;
+  color: #72777F;
+}
+
+/*===========================================Contact Details====================================*/
+.edit2IconDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.edit2IconDiv .edit2IconText {
+  padding: 0 0.5em;
+  color: #1363DF;
+}
+
+.contactInfoDetailsDiv {
+  border: 1px solid #B5B7BC;
+  padding: 1em 0;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.contactInfoDetailsDiv .shippingInfoTitle {
+  padding-left: 1em;
+}
+
+.contactInfoDetailsDiv .edit2IconDiv {
+  position: absolute;
+  right: 2.5%;
+  top: 15%;
+}
+
+/*===========================================Product Review====================================*/
+.chekoutProdDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chekoutProdDiv .prodReviewTitle {
+  overflow: hidden;
+  max-width: 10rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chekoutProdDiv .chekoutProdImg {
+  width: 18%;
+  height: 5rem;
+  padding-right: 1em;
+}
+
+.chekoutProdBtnDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chekoutProdBtnDiv .chekoutProdBtn {
+  color: white;
+}
+
+.OrderDiv {
+  padding: 0 0 3em 0;
+}
+
+.OrderDiv p {
+  color: #535965;
+}
+
+.OrderDiv .infoHeading {
+  color: #172026;
+  font-weight: bold;
+}
+
+.OrderDiv .paddingLeft1em {
+  padding-left: 1em;
+}
+
+.OrderDiv .OrderHeading {
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.OrderDiv .infoHeading {
+  color: #172026;
+}
+
+.OrderDiv .productDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.OrderDiv .productDesc img {
+  width: 20%;
+  height: 5rem;
+  padding-right: 0.75em;
+}
+
+.OrderDiv .boxDiv {
+  position: relative;
+  height: 12rem;
+  width: 15rem;
+  background-color: #47B5FF;
+  border-radius: 0.125rem;
+  text-align: center;
+  padding: 1.5em 1em 0 1em;
+}
+
+.OrderDiv .boxDiv p {
+  color: #FFFFFF;
+}
+
+.OrderDiv .boxDiv .iconDiv {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.OrderDiv .boxDiv .iconDiv img {
+  padding: 0 1em;
+}
+
+.OrderDiv .orderTitle {
+  overflow: hidden;
+  max-width: 10rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 footer {
   clear: both;
   border-top: 1px solid black;
@@ -6429,7 +6745,7 @@ footer .lowerFooter li {
   padding: 0 0.5em;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .display-lmobile-36- {
     font-family: Source Serif Pro;
     font-style: normal;
@@ -6451,6 +6767,12 @@ footer .lowerFooter li {
   .container {
     width: 90%;
     margin: auto;
+  }
+  .mobileHide {
+    display: none;
+  }
+  .desktopHide {
+    display: block;
   }
   /* ==============================Header 2===================================*/
   header .nav-links {
@@ -6568,15 +6890,17 @@ footer .lowerFooter li {
   .homeBanner .homeInnerBanner div p {
     text-align: center;
   }
-  .homeBanner .homeInnerBanner div button {
+  .homeBanner .homeInnerBanner div .collectionBtnDiv {
     margin: auto;
+  }
+  .homeBanner .homeInnerBanner div button {
     margin-bottom: 0.25em;
   }
   .homeBanner .homeInnerBanner div .homeBannerImg {
     background-image: url(../Assets/homepage_1.jpg);
     background-size: cover;
   }
-  .homeBanner img {
+  .homeBanner .homeImage {
     width: 100%;
     height: 90vh;
   }
@@ -6631,7 +6955,7 @@ footer .lowerFooter li {
     text-align: center;
     width: 100%;
   }
-  .takeoffOuter img {
+  .takeoffOuter .manwithGoggles {
     width: 100%;
   }
   /* ==============================Footer Banner starts=================== */
@@ -6657,29 +6981,27 @@ footer .lowerFooter li {
   }
   /* ==============================Hero Banner===================================*/
   .heroBanner {
-    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding: 0;
   }
   .heroBanner .heroInnerBanner {
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    margin: auto;
-    width: 75%;
+    padding: 1em 0;
+    margin: -1em 0.25em 0 0.25em;
+    width: calc(100% - 0.5em);
   }
   .heroBanner .heroInnerBanner h2 {
     color: #FFFFFF;
     padding: 0 0 1em 0;
   }
+  .heroBanner .heroInnerBanner div {
+    margin-bottom: 0.25em;
+  }
   .heroBanner img {
-    padding: 1em 1em 0em 1em;
-    margin-bottom: 5em;
+    padding: 0;
+    width: 100%;
   }
   /*============================Product List============================*/
   .produFilters {
@@ -6775,6 +7097,53 @@ footer .lowerFooter li {
   .imgCarousal {
     display: none;
   }
+  /* ==============================Checkout===================================*/
+  .checkout {
+    padding: 0;
+  }
+  .checkout .checkoutContainer {
+    margin: auto;
+    width: 95%;
+  }
+  .checkout .checkoutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout .guestCheckOutcontainer input[type="text"] {
+    width: 14rem;
+  }
+  .checkout .guestCheckOutcontainer label {
+    text-align: left;
+  }
+  .checkout #stateNzip {
+    width: 14rem;
+    margin-bottom: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout #stateInput {
+    width: 14rem;
+    position: static;
+  }
+  .checkout #zipInput {
+    width: 14rem;
+    position: static;
+  }
+  .checkout .pricingSummaryDiv {
+    margin-top: 0;
+  }
+  /*===========================================Contact Details====================================*/
+  .contactInfoDetailsDiv .edit2IconDiv {
+    right: 5%;
+    top: 7.5%;
+  }
+  .contactInfoDetailsDiv .edit2IconDiv .edit2IconText {
+    display: none;
+  }
   /* ==============================Footer===================================*/
   .lowerFooter {
     -webkit-box-orient: vertical;
@@ -6784,7 +7153,7 @@ footer .lowerFooter li {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .display-lmobile-36- {
     font-family: Source Serif Pro;
     font-style: normal;
@@ -7009,29 +7378,27 @@ footer .lowerFooter li {
   }
   /* ==============================Hero Banner===================================*/
   .heroBanner {
-    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding: 0;
   }
   .heroBanner .heroInnerBanner {
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    margin: auto;
-    width: 75%;
+    padding: 1em 0;
+    margin: -1em 0.5em 0 0.5em;
+    width: calc(100% - 1em);
   }
   .heroBanner .heroInnerBanner h2 {
     color: #FFFFFF;
     padding: 0 0 1em 0;
   }
+  .heroBanner .heroInnerBanner div {
+    margin-bottom: 0.25em;
+  }
   .heroBanner img {
-    padding: 1em 1em 0em 1em;
-    margin-bottom: 5em;
+    padding: 0;
+    width: 100%;
   }
   /*============================Product List============================*/
   .produFilters {
@@ -7126,6 +7493,13 @@ footer .lowerFooter li {
   /*============================Product Details============================*/
   .imgCarousal {
     display: none;
+  }
+  /* ==============================Checkout===================================*/
+  .checkoutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /* ==============================Footer===================================*/
   .lowerFooter {

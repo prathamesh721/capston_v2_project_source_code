@@ -3,6 +3,7 @@ import instagram from '../Assets/Icons/instagram.svg';
 import facebook from '../Assets/Icons/facebook.svg'
 import twitter from '../Assets/Icons/twitter.svg'
 import Logo from "../Assets/Logo.PNG"
+import {Link} from 'react-router-dom'
 const Footer = () => {
 
     return (
@@ -46,7 +47,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='lowerFooter'>
-            <a href='/ezest_assessment_2_v2' aria-label='Footer logo'><img src={Logo} alt='Brand logo'/></a>
+            <Link to='/' aria-label='Footer logo'><img src={Logo} alt='Brand logo'/></Link>
                 <p>&copy; Company Name Address Ave, City Name, State ZIP</p>
                 <ul>
                     <li><a href='#' aria-label='Terms of use'>Terms of Use</a></li>

@@ -46,7 +46,7 @@ const Header = () => {
 
           <a href="/ezest_assessment_2_v2">
             {/* <img src={logo} className={displayIn ? "hideLogo" : "logo"} alt='brand logo' /> */}
-            <p className={displayIn ? "hideLogo" : "logo"} alt='brand logo'>VENIA</p>
+            <Link to='/'><p className={displayIn ? "hideLogo" : "logo"} alt='brand logo'>VENIA</p></Link>
           </a>
 
           <nav role="navigation">

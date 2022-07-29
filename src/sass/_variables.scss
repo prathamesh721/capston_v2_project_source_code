@@ -29,6 +29,12 @@ button:hover {
 .p-1 {
   padding: 1em;
 }
+.py-25{
+  padding: 0.25em 0;
+}
+.py-05{
+  padding: 0.5em 0;
+}
 
 .py-1 {
   padding: 1em 0;
@@ -101,6 +107,7 @@ $positive-1: #268E6C;
 $negative-2: #C9252D;
 $negative-1: #D7373F;
 $unnamed-color-172026: #172026;
+$charcoal-custom: #72777F;
 
 $oxford-blue-354e57: green;
 $alabasterr-f7f7f7: wheat;

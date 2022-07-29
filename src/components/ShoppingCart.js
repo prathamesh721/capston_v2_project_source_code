@@ -68,11 +68,12 @@ function ShoppingCart() {
         <>
           <div className="aem-Grid aem-Grid--12 shoppingBagWrapper">
             {/* ==============8 column inner grid starts==========*/}
+            <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
+              {shoppingbagitem.map((val) => {
+                return (
+                  <React.Fragment>
 
-            {shoppingbagitem.map((val) => {
-              return (
-                <React.Fragment>
-                  <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
+
                     <div className="aem-Grid aem-Grid--12">
 
                       <div className="shopping-cart aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
@@ -110,11 +111,13 @@ function ShoppingCart() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </React.Fragment>
 
-              );
-            })}
+
+                  </React.Fragment>
+
+                );
+              })}
+            </div>
 
             {/* ==============8 column inner grid ends==========*/}
 
@@ -147,7 +150,7 @@ function ShoppingCart() {
               </div>
 
               <div className="aem-GridColumn aem-GridColumn--phone--6  aem-GridColumn--tablet--12 aem-GridColumn--default--4 check">
-                <button className="checkOutBtn cartBtns"><img src={lock} alt='lock icon' />CHECKOUT</button>
+                <Link to='/ezest_assessment_2_v2/cart/checkout'><button className="checkOutBtn cartBtns"><img src={lock} alt='lock icon' />CHECKOUT</button></Link>
               </div>
               <div className="aem-GridColumn aem-GridColumn--phone--6  aem-GridColumn--tablet--12 aem-GridColumn--default--4">
                 <img src={PP_BTN} alt='payment gateway' className="cartBtns payPal" />

@@ -23,6 +23,7 @@ const ProductPage = ({ sideBarToggleCopy, showSidebar }) => {
         // console.log("Err: ", err);
       });
     setProducts(response.data);
+    console.log(response.data)
     setIsLoading(false);
   };
 
