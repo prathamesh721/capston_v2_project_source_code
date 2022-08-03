@@ -318,13 +318,11 @@
   /*============================Product List============================*/
 
   .produFilters {
-
-    padding: 2em 0 1em 0;
+    padding: 0;
     @include flexJust;
     justify-content: space-around;
 
     div {
-
       @include flexAlign;
 
       img {
@@ -344,12 +342,14 @@
 
     .ui.cards>.card>.image>img {
       height: 95px;
-      width: 85px;
+      width: 130px;
       max-width: 100%;
 
     }
   }
-
+  #dropbox {
+    flex-direction: column-reverse;
+  }
 
   /*============================SideBar============================*/
 
@@ -374,6 +374,10 @@
   .sideBar-active {
     transform: translateX(0%);
     display: block;
+  }
+  .productResults{
+    margin: auto;
+    padding-top: 2em;
   }
 
   /*============================Shopping Cart ============================*/
@@ -420,5 +424,19 @@
   /* ==============================Footer===================================*/
   .lowerFooter {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+  .sideBarToggle {
+    display: none;
+    transition: transform 0.8s ease-in;
+    transform: translateX(-140%);
+  }
+
+  .sideBar-active {
+    transform: translateX(0%);
+    display: block;
   }
 }

@@ -123,10 +123,10 @@ const Header = () => {
             </a> */}
 
             <Link to="/ezest_assessment_2_v2/cart" aria-label="Click to see shopping cart">
-              <img src={shoppingBag} alt='shopping cart' />
+              <img src={shoppingBag} alt='shopping cart' className="shoppingBagImg" />
             </Link>
             {/* <span>{cartTotalQuantity}</span> */}
-            <span>{totalcartitem}</span>
+            <span className="totalcartitems">{totalcartitem}</span>
           </div>
         </div>
       </header>

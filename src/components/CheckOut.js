@@ -19,6 +19,10 @@ const CheckOut = () => {
   const { shippingState, setShippingState } = useState({ radioValue: "" });
 
   const cart = useSelector((state) => state.handlecartSlice.cartTotalAmount);
+
+  // var shippingMethod = localStorage.getItem("shippingMethod")
+  // var shippingRate = JSON.parse()
+
   return (
     <React.Fragment>
       {/* =========================== Heading ===================== */}

@@ -66,7 +66,7 @@ function ShoppingCart() {
 
       ) : (
         <>
-          <div className="aem-Grid aem-Grid--12 shoppingBagWrapper">
+          <div className="aem-Grid aem-Grid--12 shoppingBagWrapper container">
             {/* ==============8 column inner grid starts==========*/}
             <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
               {shoppingbagitem.map((val) => {
@@ -74,14 +74,14 @@ function ShoppingCart() {
                   <React.Fragment>
 
 
-                    <div className="aem-Grid aem-Grid--12">
+                    <div className="aem-Grid aem-Grid--12 productCartAllItemsDiv">
 
                       <div className="shopping-cart aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                        <img src={val.image} className="prodImg" alt={val.title}/>
+                        <img src={val.image} className="prodImgCart" alt={val.title}/>
                       </div>
 
-                      <div className="cart-details aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                        <h1>{val.title}</h1>
+                      <div className="cart-details aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 productCartDesc">
+                        <h1 className="cartProductTitle">{val.title}</h1>
                         <p>Size : Medium</p>
                         <p>Color : Storm</p>
                         <p>${Number.parseFloat(val.price * val.cartQuantity).toFixed(2)}</p>
@@ -91,7 +91,7 @@ function ShoppingCart() {
                       <div className="sharingOuter aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 text_center">
                         <div className="py-1 cartBtn">
                           <button onClick={() => handleDecreaseCart(val)}>-</button>
-                          <div className="quantityDiv">{val.cartQuantity}</div>
+                          <div className="quantityDivCart">{val.cartQuantity}</div>
                           <button onClick={() => handleIncreaseCart(val)}>+</button>
                         </div>
 
@@ -161,9 +161,9 @@ function ShoppingCart() {
 
           {/*========================= Bottom Section =============== */}
 
-          <div className="aem-Grid aem-Grid--12">
-            <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--8">
-              <button class="accordion">
+          <div className="aem-Grid aem-Grid--12 container">
+            <div className="aem-GridColumn aem-GridColumn--phone--12  aem-GridColumn--tablet--12 aem-GridColumn--default--8 accordianDiv">
+              <button class="accordion accoBorder1">
                 <p> Estimate your Shipping{" "}</p>
                 <span>
                   shipping to 91001 <img src={chevrondown} alt='dropdown icon' />{" "}
@@ -171,7 +171,7 @@ function ShoppingCart() {
               </button>
 
 
-              <button class="accordion">
+              <button class="accordion accoBorder1">
                 <p> Enter a Coupon Code</p>
                 <span>
                   20%discount applied <img src={chevrondown} alt='dropdown icon' />

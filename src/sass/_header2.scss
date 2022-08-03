@@ -5,13 +5,13 @@ header {
   padding: 1em;
   color: $white;
   // border-bottom: 1px solid black;
-  
+
 
   .logo {
-    
+
     letter-spacing: 0.25rem;
     padding: 1em 0 0 5em;
-    
+
     color: $white;
   }
 
@@ -63,7 +63,7 @@ header {
 
 
   .nav-links {
-   
+
     display: flex;
 
     li {
@@ -74,7 +74,8 @@ header {
     a {
       text-decoration: none;
       @extend .regualr-body-m-16-;
-      color: $white;;
+      color: $white;
+      ;
     }
   }
 
@@ -83,23 +84,43 @@ header {
   }
 
 
-  
+
 
   .headerOuter {
     @include flexJust;
     justify-content: space-between;
-    
+
     width: 90vw;
   }
 
   .endHeader {
     @include flexAlignJust;
-    
-label, a{
-  @extend .regualr-body-m-16-;
-}
+
+
+    label,
+    a {
+      @extend .regualr-body-m-16-;
+    }
+
     img {
       padding: 0 0.37em;
+    }
+    .shoppingBagImg{
+      position: relative;
+    }
+    .totalcartitems{
+    //   position: absolute;
+    //  bottom: 0;
+    margin: -20px 0 0 -10px ;
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      border-radius: 50%;
+      padding: 0.125em;
+      z-index: 2;
+      @include flexAlignJust;
+      
+    
     }
   }
 }

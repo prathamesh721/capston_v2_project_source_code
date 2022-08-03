@@ -16,6 +16,7 @@ footer {
   .lowerFooter {
     @include flexAlign;
     justify-content: space-between;
+    
 
     ul {
       display: flex;

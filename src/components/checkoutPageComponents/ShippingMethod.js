@@ -17,8 +17,21 @@ const ShippingMethod = ({setDisplayComp}) => {
         e.preventDefault()
         localStorage.setItem('shippingMethod', JSON.stringify(state));
         setDisplayComp({ShippingMethod: false, shippingDetails: true, paymentInfo: true})
+        // checkShippingCost()
     }
 
+    // const checkShippingCost = () => {
+    //     if(state.e.target.name === 'Standard Shipping (4-8 business days via USPS) FREE'){
+    //         return 'Free'
+    //     }
+    //     if(state.e.target.name === 'Express Delivery (2-5 business days via USPS) $17.95'){
+    //         return 17.95
+    //     }
+    //     if(state.e.target.name === 'Next Day Delivery (Next business days via FedEx) $53.61'){
+    //         return 53.61
+    //     }
+        
+    // } 
     
     return (
         <React.Fragment>

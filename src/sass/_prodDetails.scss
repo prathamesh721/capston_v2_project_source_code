@@ -167,12 +167,16 @@
     margin: 0.5em;
   }
 }
+
+
 .quantityDivParent{
   padding-top: 1em;
   label{
     @extend .regular-body-l-20-;
   }
 }
+
+
 .quantityDiv {
   @include flexAlignJust;
   width: 7.125rem;

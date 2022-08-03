@@ -85,7 +85,7 @@ const Order = () => {
                 </div>
 
                 {/* =============================Image Part================================== */}
-                <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--12'>
+                <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--12 mobileHide'>
                     <div className='boxDiv'>
                         <p>Give us a follow to SAVE 20% on your next order.</p>
                         <div className='iconDiv'>

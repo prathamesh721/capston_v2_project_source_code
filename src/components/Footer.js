@@ -50,8 +50,8 @@ const Footer = () => {
             <Link to='/' aria-label='Footer logo'><img src={Logo} alt='Brand logo'/></Link>
                 <p>&copy; Company Name Address Ave, City Name, State ZIP</p>
                 <ul>
-                    <li><a href='#' aria-label='Terms of use'>Terms of Use</a></li>
-                    <li><a href='#' aria-label='Privacy policy document'>Privacy Policy</a></li>
+                    <li><a href='#' aria-label='Terms of use'><u>Terms of Use</u></a></li>
+                    <li><a href='#' aria-label='Privacy policy document'><u>Privacy Policy</u></a></li>
                 </ul>
             </div>
         </footer>

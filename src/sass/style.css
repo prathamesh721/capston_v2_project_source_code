@@ -5194,7 +5194,7 @@ button:hover {
 }
 
 .container {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
@@ -5301,7 +5301,7 @@ button:hover {
   color: #172026;
 }
 
-.regular-heading-l-20-, .prodDetailsText .prodDetailsPrice, .descDiv .descLabel, .checkout .checkOutPadding {
+.regular-heading-l-20-, .shoppingCart .productCartAllItemsDiv .cartProductTitle, .shoppingCart .accordianDiv p, .prodDetailsText .prodDetailsPrice, .descDiv .descLabel, .checkout .checkOutPadding {
   font-family: Muli;
   font-style: normal;
   font-weight: 600px;
@@ -5341,7 +5341,8 @@ button:hover {
   color: #172026;
 }
 
-.regualr-body-m-16-, header .nav-links a, header .endHeader label, header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .sideHeading, .sideBar .py05 label, .firstHead, #dropbox option, .prodDetailsText .desc, .prodDetailsText .textWrapper .text, .prodDetailsText .textWrapper .read-or-hide, .descDiv .desc2, .checkout .pricingSummaryDiv li, .detailsPara, .edit2IconDiv .edit2IconText, .chekoutProdDiv p, .checkoutTerms, .OrderDiv p, .OrderDiv .infoHeading, footer a,
+.regualr-body-m-16-, header .nav-links a, header .endHeader label,
+header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .sideHeading, .sideBar .py05 label, .firstHead, #dropbox option, .prodDetailsText .desc, .prodDetailsText .textWrapper .text, .prodDetailsText .textWrapper .read-or-hide, .descDiv .desc2, .checkout .pricingSummaryDiv li, .detailsPara, .edit2IconDiv .edit2IconText, .chekoutProdDiv p, .checkoutTerms, .OrderDiv p, .OrderDiv .infoHeading, footer a,
 footer p,
 footer li {
   font-family: Muli;
@@ -5353,7 +5354,7 @@ footer li {
   color: #172026;
 }
 
-.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .checkout .shippingMethodBtn, .chekoutProdBtnDiv .chekoutProdBtn, .footerBanner .footerBannerInner p, .content, .OrderDiv .infoHeading {
+.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .checkout .shippingMethodBtn, .chekoutProdBtnDiv .chekoutProdBtn, .footerBanner .footerBannerInner p, .shoppingCart .accordianDiv span, .content, .OrderDiv .infoHeading {
   font-family: Muli;
   font-style: normal;
   font-weight: normal;
@@ -5494,6 +5495,29 @@ header .endHeader {
 
 header .endHeader img {
   padding: 0 0.37em;
+}
+
+header .endHeader .shoppingBagImg {
+  position: relative;
+}
+
+header .endHeader .totalcartitems {
+  margin: -20px 0 0 -10px;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.25em;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .homeBanner {
@@ -5808,7 +5832,7 @@ header .endHeader img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1em;
+  padding: 0 0 1em 0;
   margin: auto;
 }
 
@@ -5961,10 +5985,14 @@ header .endHeader img {
   border-radius: 0.25rem;
 }
 
-.shoppingCart .prodImg {
-  width: 6rem;
-  height: 10%;
-  padding: 1em;
+.shoppingCart .prodImgCart {
+  width: 122px;
+  height: 133px;
+  max-width: 100%;
+}
+
+.shoppingCart .cart-details {
+  padding: 0;
 }
 
 .shoppingCart .leftSideCart {
@@ -5991,6 +6019,39 @@ header .endHeader img {
   padding: 0;
 }
 
+.shoppingCart .productCartAllItemsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shoppingCart .productCartAllItemsDiv .cartProductTitle {
+  overflow: hidden;
+  max-width: 20ch;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.shoppingCart .quantityDivCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.125rem;
+  height: 2rem;
+  border: 1px solid #91959C;
+  border-radius: 0.375rem;
+  margin: 0 0.5em;
+}
+
 .shoppingCart .sharingOuter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5998,7 +6059,7 @@ header .endHeader img {
 }
 
 .shoppingCart .sharingOption {
-  padding: 2em;
+  padding: 1em;
 }
 
 .shoppingCart .sharingInner {
@@ -6074,10 +6135,20 @@ header .endHeader img {
   visibility: hidden;
 }
 
+.shoppingCart .accordianDiv {
+  border: 1px solid gray;
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+.shoppingCart .accordianDiv .accoBorder1 {
+  border-bottom: 1px solid gray;
+}
+
 .shoppingCart .accordion,
 .shoppingCart .panel {
   width: 100%;
-  padding: 0.75em;
+  padding: 1em;
 }
 
 .shoppingCart .accordion {
@@ -6088,7 +6159,7 @@ header .endHeader img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: none;
-  border: 1px solid gray;
+  border: none;
 }
 
 .productListing {
@@ -7115,7 +7186,7 @@ footer .lowerFooter li {
   }
   /*============================Product List============================*/
   .produFilters {
-    padding: 2em 0 1em 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7142,8 +7213,8 @@ footer .lowerFooter li {
     padding: 0;
   }
   * .ui.cards > .card > .image > img {
-    height: 95px;
-    width: 85px;
+    height: 90px;
+    width: 110px;
     max-width: 100%;
   }
   #dropbox {
@@ -7175,6 +7246,10 @@ footer .lowerFooter li {
   }
   .firstHead {
     text-align: center;
+  }
+  .productResults {
+    margin: auto;
+    padding-top: 2em;
   }
   /*============================Shopping Cart ============================*/
   .sharingOption {
@@ -7585,7 +7660,7 @@ footer .lowerFooter li {
   }
   /*============================Product List============================*/
   .produFilters {
-    padding: 2em 0 1em 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7613,8 +7688,14 @@ footer .lowerFooter li {
   }
   * .ui.cards > .card > .image > img {
     height: 95px;
-    width: 85px;
+    width: 130px;
     max-width: 100%;
+  }
+  #dropbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   /*============================SideBar============================*/
   .sideBar {
@@ -7636,6 +7717,10 @@ footer .lowerFooter li {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     display: block;
+  }
+  .productResults {
+    margin: auto;
+    padding-top: 2em;
   }
   /*============================Shopping Cart ============================*/
   .sharingOption {
@@ -7692,6 +7777,23 @@ footer .lowerFooter li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .sideBarToggle {
+    display: none;
+    -webkit-transition: -webkit-transform 0.8s ease-in;
+    transition: -webkit-transform 0.8s ease-in;
+    transition: transform 0.8s ease-in;
+    transition: transform 0.8s ease-in, -webkit-transform 0.8s ease-in;
+    -webkit-transform: translateX(-140%);
+            transform: translateX(-140%);
+  }
+  .sideBar-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

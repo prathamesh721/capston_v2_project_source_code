@@ -3,8 +3,8 @@
     .pricingSummary {
         box-shadow: -2px 0px 14px -3px rgba(0, 0, 0, 0.75);
         // margin: auto;
-        
-       
+
+
 
 
     }
@@ -18,21 +18,24 @@
         .start_shopping {
             @include flexAlignJust;
             padding: 1em;
-            
-            img{
+
+            img {
                 padding: 0 0.5em;
             }
         }
     }
 
-    
+
 
     .shop-head {
         text-align: center;
+        padding-bottom: 2em;
+      
 
         h1 {
-            @extend .display-xl-48-dekstop-only;
-            padding: 0.25em 0;
+            // @extend .display-xl-48-dekstop-only;
+            @extend .display-l-36-;
+            padding: 0.5em 0;
         }
     }
 
@@ -46,11 +49,20 @@
         border-radius: 0.25rem;
     }
 
-    .prodImg {
+    .prodImgCart {
 
-        width: 6rem;
-        height: 10%;
-        padding: 1em;
+
+        width: 122px;
+        height: 133px;
+        max-width: 100%;
+        // padding: 1em;
+
+    }
+
+    .cart-details {
+        padding: 0;
+
+
 
     }
 
@@ -68,6 +80,42 @@
         padding: 0
     }
 
+    .productCartAllItemsDiv {
+        display: flex;
+
+        align-items: center;
+
+        .cartProductTitle {
+            overflow: hidden;
+            max-width: 20ch;
+            text-overflow: clip;
+            white-space: nowrap;
+            @extend .regular-heading-l-20-;
+        }
+
+        .productCartDesc{
+            @extend .regualr-body-m-16-;
+        }
+
+        .sharingOption{
+            span{
+               @extend .regular-body-s-14-; 
+               font-size: 12px;
+            }
+        }
+
+
+    }
+
+    .quantityDivCart {
+        @include flexAlignJust;
+        width: 4.125rem;
+        height: 2rem;
+        border: 1px solid $gray-m1;
+        border-radius: 0.375rem;
+        margin: 0 0.5em;
+    }
+
     .sharingOuter {
         display: flex;
 
@@ -75,7 +123,7 @@
     }
 
     .sharingOption {
-        padding: 2em;
+        padding: 1em;
     }
 
     .sharingInner {
@@ -83,7 +131,7 @@
         background: none;
         border: none;
 
-        &:hover{
+        &:hover {
             color: black;
         }
 
@@ -92,18 +140,20 @@
         }
     }
 
-    .cartBtns{
+    .cartBtns {
         max-width: 100%;
-        
 
-       
+
+
     }
 
-    .payPal{
-        &:active, &:hover{
+    .payPal {
+
+        &:active,
+        &:hover {
             transform: scale(0.98);
-           
-         }
+
+        }
     }
 
 
@@ -115,15 +165,16 @@
         border: none;
         @include flexAlignJust;
         width: 247px;
+        @extend .regular-body-s-14-;
 
-        &:active{
+        &:active {
             background-color: $primary-d1;
-          }
+        }
 
         img {
             padding: 0.25em 0.5em;
 
-        
+
         }
     }
 
@@ -131,17 +182,41 @@
         @include flexAlignJust;
         justify-content: space-between;
 
+        h3{
+            @extend .regular-heading-l-20-;
+        }
+        li{
+            @extend .regualr-body-m-16-;
+        }
+
     }
 
     .blankHeader {
         visibility: hidden;
     }
 
+    .accordianDiv {
+        border: 1px solid gray;
+        padding: 0;
+        margin-bottom: 3em;
+
+        .accoBorder1 {
+            border-bottom: 1px solid gray;
+        }
+
+        p {
+            @extend .regular-heading-l-20-;
+        }
+
+        span {
+            @extend .regular-body-s-14-;
+        }
+    }
 
     .accordion,
     .panel {
         width: 100%;
-        padding: 0.75em;
+        padding: 1em;
 
     }
 
@@ -149,7 +224,8 @@
         display: flex;
         justify-content: space-between;
         background: none;
-        border: 1px solid gray;
+        border: none;
+        // border: 1px solid gray;
 
     }
 }

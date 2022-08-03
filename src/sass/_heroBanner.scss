@@ -1,48 +1,32 @@
-.heroBanner{
+.heroBanner {
+  display: flex;
+  padding: 0 0 1em 0;
+  margin: auto;
+  
+  .heroInnerBanner {
+    @extend .display-xl-48-dekstop-only;
+    background-color: black;
     display: flex;
-    padding: 1em;
-    
-    margin: auto;
-    .heroInnerBanner{
-        @extend .display-xl-48-dekstop-only;
-        
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 1em 1em 1em 1em;
+    width: 30%;
 
-        background-color: black;
-        
-        //width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-        text-align: center;
-        
-        color: white;
-        padding: 1em 1em 1em 1em;
-       
-         width: 30%;
-        
-        div{
-           
-            margin: auto;
-            height: 0.5rem;
-            
-            width: 10rem;
-            background-color:  $primary-brand;
-            border-radius: 0.25rem;
-          
-
-        }
-
+    div {
+      margin: auto;
+      height: 0.5rem;
+      width: 10rem;
+      background-color: $primary-brand;
+      border-radius: 0.25rem;
     }
-    img{
-        // flex: 2;
-        width: 70%;
-        height: 20rem;
-        object-fit: cover;
-        padding: 1em 0 1em 0;
-    }
-    
+  }
+  img {
+    width: 70%;
+    height: 20rem;
+    object-fit: cover;
+    padding: 1em 0 1em 0;
+  }
 }
-
-
