@@ -1,145 +1,168 @@
-
-
-.productListing{
+.productListing {
   position: relative;
 }
-#dropbox{
-  text-align: end;
-  margin-right: 1em;
+
+#dropbox {
+  // text-align: end;
+  // margin-right: 1em;
+  display: flex;
+  justify-content: space-between;
+  // padding: 1em;
+
+  .productResults {
+    @extend .regular-heading-m-16-;
+  }
+  option{
+    @extend .regualr-body-m-16-;
+  }
 }
+
 
 
 
 * {
-    
-    padding: 0;
-    margin: 0;
-  }
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  .ui.cards > .card{
-    padding: 1em;
-  }
 
-  .ui.cards > .card > .image {
-    /* height: 250px; */
-    height: 10rem;
-    padding: 1.25em;
-    background: #fff;
-    margin: auto;
-  }
-  .ui.cards > .card > .image > img {
-    height: 100%;
-    max-width: 100%;
-    width: 80%;
-  }
-  .ui.cards > .card > .content > .header {
-    color: black;
-    
-    overflow: hidden;
-  
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 20rem;
-    font-weight: bold;
-  }
-  .ui.cards > .card > .content > .description {
-   
-   
-    
-    overflow: hidden;
-  }
-  .ui.cards > .card .meta.price {
-   
-    font-size: 18px;
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .ui.cards > .card .meta.price > a {
-    font-size: 1.3rem;
-    color: #222;
-  }
-  
-  .ui.menu.fixed {
-    height: 60px;
-    padding-top: 15px;
-  }
-  
-  .ui.grid.container {
-    margin-top: 45px;
-  }
-  
-  .ui.grid > .row {
-    background: #fff;
-  }
-  .ui.grid > .row > .column.lp {
-    padding: 20px 40px 20px 20px;
-    align-self: flex-start !important;
-  }
-  .ui.grid > .row > .column.rp {
-    padding: 20px 20px 20px 40px;
-    text-align: left;
-    align-self: flex-start !important;
-  }
-  
-  .ui.grid > .row > .column > img,
-  .ui.grid > .row > img {
-    height: 100%;
-  }
-  .ui.placeholder .header:not(:first-child):before,
-  .ui.placeholder .image:not(:first-child):before,
-  .ui.placeholder .paragraph:not(:first-child):before {
-    display: none;
-  }
-  
-  .ui.label,
-  .ui.labels .label {
-    font-size: 22px;
-  }
-  
-  .column.rp h1 {
-    color: #333;
-  }
-  .column.rp p {
-    font-size: 18px;
-    color: #777;
-  }
-  .ui.placeholder.segment .column .button,
-  .ui.placeholder.segment .column .field,
-  .ui.placeholder.segment .column textarea,
-  .ui.placeholder.segment .column > .ui.input {
-    background-color: green;
-    border: 1px solid black;
-    color: #fff;
-    font-size: 18px;
-    margin-left: 0;
-  }
-  .heartImage:hover{
-    fill: red;
-  }
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ui.cards>.card {
+  padding: 1em;
+}
+
+.ui.cards>.card>.image {
+  /* height: 250px; */
+  height: 191px;
+  padding: 1.25em;
+  background: #fff;
+  margin: auto;
+}
+
+.ui.cards>.card>.image>img {
+  height: 191px;
+  width: 170px;
+  max-width: 100%;
+
+}
+
+.ui.cards>.card>.content>.header {
+  color: black;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20rem;
+  font-weight: bold;
+}
+
+.ui.cards>.card>.content>.description {
 
 
 
-  //Pagination 
+  overflow: hidden;
+}
 
-  .pagination{
-   @include flexJust;
-    
-    & :hover {
-      background-color: #222;
-      color: white;
-    }
+.ui.cards>.card .meta.price {
+
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.ui.cards>.card .meta.price>a {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.ui.menu.fixed {
+  height: 60px;
+  padding-top: 15px;
+}
+
+.ui.grid.container {
+  margin-top: 45px;
+}
+
+.ui.grid>.row {
+  background: #fff;
+}
+
+.ui.grid>.row>.column.lp {
+  padding: 20px 40px 20px 20px;
+  align-self: flex-start !important;
+}
+
+.ui.grid>.row>.column.rp {
+  padding: 20px 20px 20px 40px;
+  text-align: left;
+  align-self: flex-start !important;
+}
+
+.ui.grid>.row>.column>img,
+.ui.grid>.row>img {
+  height: 100%;
+}
+
+.ui.placeholder .header:not(:first-child):before,
+.ui.placeholder .image:not(:first-child):before,
+.ui.placeholder .paragraph:not(:first-child):before {
+  display: none;
+}
+
+.ui.label,
+.ui.labels .label {
+  font-size: 22px;
+}
+
+.column.rp h1 {
+  color: #333;
+}
+
+.column.rp p {
+  font-size: 18px;
+  color: #777;
+}
+
+.ui.placeholder.segment .column .button,
+.ui.placeholder.segment .column .field,
+.ui.placeholder.segment .column textarea,
+.ui.placeholder.segment .column>.ui.input {
+  background-color: green;
+  border: 1px solid black;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 0;
+}
+
+.heartImage:hover {
+  fill: red;
+}
+
+
+
+//Pagination 
+
+.pagination {
+  @include flexJust;
+
+  & :hover {
+    background-color: #222;
+    color: white;
   }
+}
 
-  .page-item{
-    padding: 0.5em;
-    border: 1px solid black;
-    margin: 0 0.25em;
-    border-radius: 0.25em;
+.page-item {
+  padding: 0.5em;
+  border: 1px solid black;
+  margin: 0 0.25em;
+  border-radius: 0.25em;
 
-   
-  }
+
+}

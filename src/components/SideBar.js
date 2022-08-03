@@ -3,7 +3,7 @@ import axios from "axios";
 
 import crosscircle from '../Assets/Icons/x-circle.svg'
 
-function SideBar({showSidebar, sideBarToggleCopy}) {
+function SideBar({showSidebar, sideBarToggleCopy, filterProduct}) {
   
   const toggleSidebarCopy = () => {
     sideBarToggleCopy(!showSidebar);
@@ -27,17 +27,21 @@ function SideBar({showSidebar, sideBarToggleCopy}) {
         fetchCategory();
     }, [])
 
+    const [isSelected, setisSelected] = useState(false);
 
   return (
     <aside className={`${showSidebar ? ' sideBar sideBarToggle' : 'sideBar sideBar-active'}`} role='complementary'>
       
-      <p className='firstHead'>Clothing / Women’s / Outerwear</p> 
+      {/* <p className='firstHead'>Clothing / Women’s / Outerwear</p>  */}
       <div className='filterHead borderBottom'><p className='py sideHeading'>Filters</p><img src={crosscircle} onClick={toggleSidebarCopy} className='crossHide' alt='cross icon'/></div>
       <p className='sideHeading'>Attribute</p>
       {category.map(value => {
                 return (
                     <div className='py05'>
-                        <input type="checkbox" />
+                        <input type="checkbox" onClick={() => {
+                        setisSelected(!isSelected);
+                        filterProduct({value})
+                    }}/>
                         <label>&nbsp;{value}</label>
                     </div>
                 )

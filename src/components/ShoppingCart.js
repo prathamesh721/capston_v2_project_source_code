@@ -77,7 +77,7 @@ function ShoppingCart() {
                     <div className="aem-Grid aem-Grid--12">
 
                       <div className="shopping-cart aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                        <img src={val.image} className="prodImg" />
+                        <img src={val.image} className="prodImg" alt={val.title}/>
                       </div>
 
                       <div className="cart-details aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">

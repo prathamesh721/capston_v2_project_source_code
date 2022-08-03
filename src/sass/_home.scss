@@ -1,6 +1,6 @@
 .homeBanner {
     display: flex;
-   
+
 
     .homeInnerBanner {
         display: flex;
@@ -46,12 +46,17 @@
 
 
             }
+
+            .ThreeDotsWrapper {
+                display: none;
+            }
         }
 
         img {
             width: 0.75em;
             padding: 1em;
         }
+
     }
 
 
@@ -72,8 +77,8 @@
 .fourImageOuter {
     // height: 230px;
     // position: relative;
-    
-   
+
+
 
 
 
@@ -145,7 +150,7 @@
         height: 22rem;
         object-fit: cover;
         object-position: 15% 30%;
-        
+
     }
 
 }
@@ -153,24 +158,25 @@
 /* ==============================Footer Banner starts=================== */
 
 .footerBanner {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 4em auto;
-   
-  
-  
-    img{
-       
-        width: calc( 60% - 1rem);
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3em auto 5em auto;
+
+
+
+    img {
+
+        width: calc(60% - 1rem);
 
     }
 
 
 
     .footerBannerInner {
-    
+        position: relative;
         background-color: black;
-        
+        padding: 2em 0;
         width: 40%;
         display: flex;
         justify-content: center;
@@ -210,10 +216,35 @@
 
         }
 
+        .mapiconWrapper {
+            position: absolute;
+            left: 0%;
+            bottom: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+           margin-left: -1em;
+
+            .mapPinImg {
+                width: 10%;
+                margin-bottom: 0.75em;
+
+            }
+
+            .mapMaxHeaderImg {
+                width: 20%;
+                margin-left: -1em;
+
+            }
+
+        }
+
 
     }
 
-    
+
+
+
 
     .standingMan {
         padding: 1em 0 1em 0;
@@ -221,4 +252,3 @@
     }
 
 }
-

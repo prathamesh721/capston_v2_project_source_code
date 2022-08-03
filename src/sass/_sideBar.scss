@@ -1,9 +1,7 @@
 .sideBar {
     padding: 1em;
 
-    .firstHead {
-        @extend .regualr-body-m-16-;
-    }
+    
 
     .filterHead {
        @include flexJust;
@@ -62,4 +60,8 @@
         }
     }
 
+}
+.firstHead {
+    @extend .regualr-body-m-16-;
+   
 }

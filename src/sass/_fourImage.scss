@@ -16,12 +16,13 @@
      
             
     }
+   
 
     .fourImgBanner{
       
         text-align: left;
-        background-color: black;
-        opacity: 0.5;
+        // background-color: #0000009f;
+        background: #1B252CD9 0% 0% no-repeat padding-box;
         color: $white;
         padding: 1em;
         position: absolute;
@@ -29,7 +30,7 @@
         border-bottom: 10px solid $primary-brand;
         max-width: 400px;
 
-        h2, p{
+        h3, p{
             opacity: 1;
         }
         

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import logo from "../Assets/Logo.PNG";
 import search from "../Assets/Icons/search.svg";
 import user from "../Assets/Icons/user.svg";
-import shoppingBag from "../Assets/Icons/shopping-bag.svg";
+import shoppingBag from "../Assets/IconCopy/shopping-bag.svg";
 
 import { Link } from "react-router-dom";
 

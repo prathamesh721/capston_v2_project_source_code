@@ -31,11 +31,11 @@ const ContactInfo = ({setDisplayComp}) => {
                 <div className='checkoutFlex'>
                     <div>
                         <label>Email</label>
-                        <input type="email"  value={state.email} onChange={e => setState({...state, email: e.target.value})} />
+                        <input className='emailInput' type="email"  value={state.email} onChange={e => setState({...state, email: e.target.value})} />
                     </div>
                     <div>
                         <label>Phone Number</label>
-                        <input type="number"  value={state.phone} onChange={e => setState({...state, phone: e.target.value})}/>
+                        <input className='phoneInput' type="number"  value={state.phone} onChange={e => setState({...state, phone: e.target.value})}/>
 
                     </div>
                 </div>
@@ -47,48 +47,48 @@ const ContactInfo = ({setDisplayComp}) => {
 
                 <div className='checkoutFlex'>
                     <div>
-                        <label>First Name</label>
-                        <input type="text"  value={state.firsName} onChange={e => setState({...state, firsName: e.target.value})}/>
+                        <label htmlFor='firstname'>First Name</label>
+                        <input type="text" name='firstname' value={state.firsName} onChange={e => setState({...state, firsName: e.target.value})}/>
                     </div>
                     <div>
-                        <label>Last Name</label>
-                        <input type="text"  value={state.lastName} onChange={ e => setState({...state, lastName: e.target.value})}/>
+                        <label htmlFor='lastname'>Last Name</label>
+                        <input type="text" name='lastname' value={state.lastName} onChange={ e => setState({...state, lastName: e.target.value})}/>
                     </div>
 
                 </div>
 
                 <div className='checkoutFlex'>
                     <div>
-                        <label>Street Address</label>
-                        <input type="text"  value={state.address1} onChange={ e => setState({...state, address1: e.target.value})}/>
+                        <label htmlFor='address1'>Street Address</label>
+                        <input type="text" name='address1' value={state.address1} onChange={ e => setState({...state, address1: e.target.value})}/>
                     </div>
                     <div>
-                        <label>Street Address 2</label>
-                        <input type="text" value={state.address2} onChange={ e => setState({...state, address2: e.target.value})}/>
+                        <label htmlFor='address2'>Street Address 2</label>
+                        <input name='address2' type="text" value={state.address2} onChange={ e => setState({...state, address2: e.target.value})}/>
 
                     </div>
                 </div>
 
                 <div className='checkoutFlex'>
                     <div>
-                        <label>City</label>
-                        <input type="text"  value={state.city} onChange={ e => setState({...state, city: e.target.value})}/>
+                        <label htmlFor='city'>City</label>
+                        <input type="text" name='city' value={state.city} onChange={ e => setState({...state, city: e.target.value})}/>
                     </div>
-                    <div className='' id='stateNzip'>
+                    <div id='stateNzip'>
                         <div className='firstInput'>
-                            <label>State</label>
-                            <input type='text' id='stateInput'  value={state.state} onChange={ e => setState({...state, state: e.target.value})}/>
+                            <label htmlFor='Inputstate'>State</label>
+                            <input type='text' name='Inputstate' id='stateInput'  value={state.state} onChange={ e => setState({...state, state: e.target.value})}/>
                         </div>
                         <div className='secondInput'>
-                            <label>ZIP</label>
-                            <input type='number' id='zipInput'  value={state.zip} onChange={ e => setState({...state, zip: e.target.value})} />
+                            <label htmlFor='zipCode'>ZIP</label>
+                            <input name='zipCode' type='number' id='zipInput'  value={state.zip} onChange={ e => setState({...state, zip: e.target.value})} />
                         </div>
                     </div>
 
                 </div>
 
                 <div className='shippingMethodClassBtn'>
-                    <button className='shippingMethodBtn' ><span className='mobileHide'>Continue to Shipping method</span><span className='desktopHide'>CONTINUE</span></button>
+                    <button aria-label='go to shipping method' className='shippingMethodBtn' ><span className='mobileHide'>Continue to Shipping method</span><span className='desktopHide'>CONTINUE</span></button>
                 </div>
             </form>
             <hr></hr>

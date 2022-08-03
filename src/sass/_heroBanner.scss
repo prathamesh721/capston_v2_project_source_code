@@ -5,7 +5,7 @@
     margin: auto;
     .heroInnerBanner{
         @extend .display-xl-48-dekstop-only;
-        // position: relative;
+        
 
         background-color: black;
         
@@ -14,25 +14,23 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-        // text-align: center;
+        
+        text-align: center;
         
         color: white;
         padding: 1em 1em 1em 1em;
-        // // flex: 1;
+       
          width: 30%;
-        // background-color: black;
+        
         div{
-            // position: absolute;
+           
             margin: auto;
             height: 0.5rem;
             
             width: 10rem;
             background-color:  $primary-brand;
             border-radius: 0.25rem;
-            // left: 50%;
-            // transform: translateX(-50%);
-            // bottom: 25%;
+          
 
         }
 
@@ -40,6 +38,8 @@
     img{
         // flex: 2;
         width: 70%;
+        height: 20rem;
+        object-fit: cover;
         padding: 1em 0 1em 0;
     }
     
