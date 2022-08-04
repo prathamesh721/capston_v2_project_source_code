@@ -1,24 +1,5 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .display-lmobile-36- {
-    font-family: $unnamed-font-family-source-serif-pro;
-    font-style: $unnamed-font-style-normal;
-    font-weight: $unnamed-font-weight-600;
-    font-size: $unnamed-font-size-36;
-    line-height: $unnamed-line-spacing-45;
-    letter-spacing: $unnamed-character-spacing-0;
-    color: $unnamed-color-172026;
-  }
-
-  .display-m-24-2 {
-    font-family: $unnamed-font-family-source-serif-pro;
-    font-style: $unnamed-font-style-normal;
-    font-weight: $unnamed-font-weight-600;
-    font-size: $unnamed-font-size-24;
-    line-height: $unnamed-line-spacing-30;
-    letter-spacing: $unnamed-character-spacing-0;
-    color: $unnamed-color-172026;
-  }
 
   .container {
     width: 90%;
@@ -117,13 +98,13 @@
   .homeBanner {
     flex-direction: column-reverse;
     position: relative;
-    
+
 
     .homeInnerBanner {
-     
+
       position: absolute;
       background: transparent linear-gradient(181deg, #F1F1F100 0%, #F0F0F0 100%) 0% 0% no-repeat padding-box;
-     
+
       bottom: 0;
       width: auto;
 
@@ -131,7 +112,7 @@
         padding: 0.5em;
 
         h2 {
-         
+
           width: 100%;
           text-align: center;
         }
@@ -161,22 +142,23 @@
           margin: auto;
           display: flex;
           flex-direction: row;
-  
+
           .ThreeDots {
             margin: 0.25em;
             height: 1px;
             width: 1px;
             border-radius: 50%;
-          
+
             background: #666666 0% 0% no-repeat padding-box;
           }
-          .ThreeDotsActive{
+
+          .ThreeDotsActive {
             opacity: 0.3;
           }
         }
       }
 
-      
+
     }
 
     .homeImage {
@@ -190,9 +172,9 @@
   }
 
   .fourImageOuter {
-  
+
     margin: auto;
-    
+
     max-width: 100%;
     text-align: center;
     margin-bottom: 4em;
@@ -214,7 +196,7 @@
     margin: 0;
     margin-top: 3em;
     position: relative;
-  
+
 
     img {
       width: 300px;
@@ -228,9 +210,9 @@
     }
   }
 
-   /* ==============================Take off Banner starts=================== */
+  /* ==============================Take off Banner starts=================== */
 
-   .takeoffOuter {
+  .takeoffOuter {
     flex-direction: column-reverse;
 
     .takeoffInner {
@@ -245,15 +227,15 @@
 
     .manwithGoggles {
       width: 100%;
-       object-position: 15% 22%;
+      object-position: 15% 22%;
     }
   }
 
 
-   /* ==============================Footer Banner starts=================== */
-   .footerBanner {
+  /* ==============================Footer Banner starts=================== */
+  .footerBanner {
     flex-direction: column-reverse;
-    
+
 
     .standingMan {
       padding: 0;
@@ -263,7 +245,7 @@
     .footerBannerInner {
       width: 95%;
 
-     
+
       margin: -2rem auto 2rem auto;
 
       p {
@@ -279,10 +261,10 @@
         top: 0;
         margin-top: -2em;
 
-               
+
       }
     }
-    
+
   }
 
 
@@ -300,11 +282,12 @@
       width: calc(100% - 1em);
 
       h2 {
-        // @extend .display-lmobile-36-;
+
         color: $white;
 
         padding: 0 0 1em 0;
       }
+
       div {
         margin-bottom: 0.25em;
       }
@@ -315,6 +298,7 @@
       width: 100%;
     }
   }
+
   /*============================Product List============================*/
 
   .produFilters {
@@ -334,7 +318,7 @@
 
   * {
     .ui.cards>.card>.image {
-      /* height: 250px; */
+
       height: 5rem;
       padding: 0;
 
@@ -347,6 +331,7 @@
 
     }
   }
+
   #dropbox {
     flex-direction: column-reverse;
   }
@@ -375,7 +360,8 @@
     transform: translateX(0%);
     display: block;
   }
-  .productResults{
+
+  .productResults {
     margin: auto;
     padding-top: 2em;
   }
@@ -389,7 +375,7 @@
 
   .cartBtn {
     text-align: right;
-    // margin-left: auto;
+
     @include flexAlignJust;
     padding: 0
   }
@@ -414,9 +400,9 @@
 
 
 
-   /* ==============================Checkout===================================*/
+  /* ==============================Checkout===================================*/
 
-   .checkoutFlex{
+  .checkoutFlex {
     flex-direction: column;
   }
 

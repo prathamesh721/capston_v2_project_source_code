@@ -4,8 +4,6 @@ header {
   background-color: $primary-brand;
   padding: 1em;
   color: $white;
-  // border-bottom: 1px solid black;
-
 
   .logo {
 
@@ -105,13 +103,14 @@ header {
     img {
       padding: 0 0.37em;
     }
-    .shoppingBagImg{
+
+    .shoppingBagImg {
       position: relative;
     }
-    .totalcartitems{
-    //   position: absolute;
-    //  bottom: 0;
-    margin: -20px 0 0 -10px ;
+
+    .totalcartitems {
+
+      margin: -20px 0 0 -10px;
       width: 15px;
       height: 15px;
       background-color: black;
@@ -119,8 +118,8 @@ header {
       padding: 0.125em;
       z-index: 2;
       @include flexAlignJust;
-      
-    
+
+
     }
   }
 }

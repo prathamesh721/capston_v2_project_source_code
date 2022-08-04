@@ -2,7 +2,7 @@
 
     .pricingSummary {
         box-shadow: -2px 0px 14px -3px rgba(0, 0, 0, 0.75);
-        // margin: auto;
+
 
 
 
@@ -30,10 +30,10 @@
     .shop-head {
         text-align: center;
         padding-bottom: 2em;
-      
+
 
         h1 {
-            // @extend .display-xl-48-dekstop-only;
+
             @extend .display-l-36-;
             padding: 0.5em 0;
         }
@@ -55,7 +55,7 @@
         width: 122px;
         height: 133px;
         max-width: 100%;
-        // padding: 1em;
+
 
     }
 
@@ -93,14 +93,14 @@
             @extend .regular-heading-l-20-;
         }
 
-        .productCartDesc{
+        .productCartDesc {
             @extend .regualr-body-m-16-;
         }
 
-        .sharingOption{
-            span{
-               @extend .regular-body-s-14-; 
-               font-size: 12px;
+        .sharingOption {
+            span {
+                @extend .regular-body-s-14-;
+                font-size: 12px;
             }
         }
 
@@ -182,10 +182,11 @@
         @include flexAlignJust;
         justify-content: space-between;
 
-        h3{
+        h3 {
             @extend .regular-heading-l-20-;
         }
-        li{
+
+        li {
             @extend .regualr-body-m-16-;
         }
 
@@ -225,7 +226,7 @@
         justify-content: space-between;
         background: none;
         border: none;
-        // border: 1px solid gray;
+
 
     }
 }

@@ -1,93 +1,106 @@
-.checkout{
+.checkout {
 
     padding: 0;
 
-    .checkoutContainer{
+    .checkoutContainer {
         margin: auto;
         width: 80%;
     }
 
-    input[type="radio"], input[type="checkbox"]{
+    input[type="radio"],
+    input[type="checkbox"] {
         margin-right: 0.5em;
     }
-    input[type="text"], input[type="number"], input[type="email"]{
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
         border: 1px solid $gray-m1;
         border-radius: 0.5em;
         padding: 0.5em;
         width: 18rem;
-        
+
     }
-    #stateNzip{
+
+    #stateNzip {
         width: 19rem;
         text-align: left;
         position: relative;
-      
+
         display: flex;
-        // align-items: flex-end;
-        // justify-content: space-between;
+
     }
-    #stateInput{
+
+    #stateInput {
         width: 8rem;
         position: absolute;
         left: 0;
-        
-        
+
+
     }
 
-    #zipInput{
+    #zipInput {
         width: 6rem;
         position: absolute;
         right: 0;
-       
+
     }
-   .secondInput{
-        label{
+
+    .secondInput {
+        label {
             padding-right: 2rem;
         }
-   }
-    
-    
-    h2{
+    }
+
+
+    h2 {
         @extend .display-l-36-;
     }
-    h3{
+
+    h3 {
         padding: 0.5em 0;
-        
+
         @extend .display-m-24-;
     }
-    p{padding: 0.25em 0;}
+
+    p {
+        padding: 0.25em 0;
+    }
+
     padding: 2em;
-    .checkoutHeading{
+
+    .checkoutHeading {
         text-align: center;
     }
-    label{
+
+    label {
         display: block;
         padding: 0.25em 0;
         @extend .regular-heading-m-16-;
         color: $gray-d2;
         width: 18rem;
-        
-        
+
+
     }
 
-    .checkoutFlex{
+    .checkoutFlex {
         display: flex;
-        // justify-content: start;
-        // align-items: center;
+
         justify-content: space-between;
 
-             
-        
-    }
-  
 
-    .shippingMethodClassBtn{
+
+    }
+
+
+    .shippingMethodClassBtn {
         display: flex;
         justify-content: center;
 
-        
+
     }
-    .shippingMethodBtn{
+
+    .shippingMethodBtn {
         text-transform: uppercase;
         @extend .shopBtn;
         background-color: transparent;
@@ -95,88 +108,94 @@
         border: 1px solid $primary-brand;
         margin: 1.5em 0;
     }
-    .hideContent{
+
+    .hideContent {
         display: none;
     }
 
 
     /*===============================Cart summary============================*/
 
-    .cartSummaryCheckout{
+    .cartSummaryCheckout {
         display: flex;
-        
+
         justify-content: center;
         justify-content: space-between;
     }
-    .pricingSummaryDiv{
+
+    .pricingSummaryDiv {
         margin-top: 3.37em;
         border: 1px solid $gray-m1;
         padding: 1em;
         border-radius: 0.125em;
 
-        .priceSumTitle{
+        .priceSumTitle {
             @extend .regular-body-l-20-;
             padding: 0.125em 0;
         }
-        li{
+
+        li {
             @extend .regualr-body-m-16-;
             padding: 0.125em 0;
         }
 
     }
-    .expressCheckoutDive{
+
+    .expressCheckoutDive {
         border: 1px solid $gray-m1;
         padding: 0 1em;
         margin-top: 1em;
         border-radius: 0.125em;
         display: flex;
-        // justify-content: center;
+
         align-items: center;
         justify-content: space-between;
 
-        strong{
+        strong {
             width: 50%;
         }
     }
 
-    .checkOutPadding{
+    .checkOutPadding {
         padding: 0.75em 0;
         color: $charcoal-custom;
         @extend .regular-heading-l-20-;
     }
-    
+
 }
+
 /*===========================================All Details components====================================*/
-.detailsPara{
-   @extend .regualr-body-m-16-;
+.detailsPara {
+    @extend .regualr-body-m-16-;
 }
 
 /*===========================================Contact Details====================================*/
 
 
-.edit2IconDiv{
+.edit2IconDiv {
     display: flex;
     align-items: center;
     justify-content: end;
 
-    .edit2IconText{
+    .edit2IconText {
         padding: 0 0.5em;
         color: $primary-brand;
         @extend .regualr-body-m-16-;
     }
 }
 
-.contactInfoDetailsDiv{
+.contactInfoDetailsDiv {
     border: 1px solid $gray-l2;
     padding: 1em 0;
     margin-bottom: 1em;
     position: relative;
-   
-    .shippingInfoTitle{
+
+    .shippingInfoTitle {
         padding-left: 1em;
         @extend .regular-heading-m-16-;
     }
-    .edit2IconDiv{
+
+    .edit2IconDiv {
         position: absolute;
         right: 2.5%;
         top: 15%;
@@ -185,43 +204,47 @@
 
 /*===========================================Product Review====================================*/
 
-.chekoutProdDiv{
+.chekoutProdDiv {
     display: flex;
     align-items: center;
 
-    .prodReviewTitleHeading{
+    .prodReviewTitleHeading {
         @extend .regular-heading-m-16-;
     }
-   
 
-    .prodReviewTitle{
+
+    .prodReviewTitle {
         overflow: hidden;
         max-width: 10rem;
         white-space: nowrap;
         text-overflow: ellipsis;
         @extend .regular-heading-m-16-;
     }
-    .chekoutProdImg{
+
+    .chekoutProdImg {
         width: 18%;
         height: 5rem;
         padding-right: 1em;
     }
-    p{
+
+    p {
         @extend .regualr-body-m-16-;
     }
 }
-.chekoutProdBtnDiv{
+
+.chekoutProdBtnDiv {
     display: flex;
     justify-content: center;
 
-    .chekoutProdBtn{
+    .chekoutProdBtn {
         @extend .shopBtn;
         color: white;
         width: 17vw;
     }
 }
+
 /* =========================== Place order button ===================== */
-.checkoutTerms{
+.checkoutTerms {
     text-align: center;
     @extend .regualr-body-m-16-;
 }

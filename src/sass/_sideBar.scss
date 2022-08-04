@@ -1,17 +1,17 @@
 .sideBar {
     padding: 1em;
 
-    
+
 
     .filterHead {
-       @include flexJust;
+        @include flexJust;
         justify-content: space-between;
     }
 
-   
-    .crossHide{
-      display: none;
-     }
+
+    .crossHide {
+        display: none;
+    }
 
     .sideHeading {
         font-weight: bold;
@@ -23,19 +23,9 @@
 
     }
 
-    .square {
-        height: 2.5rem;
-        width: 4.063rem;
-
-        margin: 0.25em;
-        border-radius: 0.375rem;
 
 
-    }
 
-    .otherColorClass {
-        background: transparent linear-gradient(180deg, #AF52FF 0%, #7950E8 16%, #4F5ADA 29%, #57CB76 43%, #EBC250 56%, #FF8810 69%, #E32F0F 83%, #BF1919 100%) 0% 0% no-repeat padding-box;
-    }
 
     .border1 {
         border: 1px solid gray;
@@ -46,11 +36,7 @@
         margin-bottom: 0.5em;
     }
 
-    .colorGroup {
-        display: inline-flex;
-        flex-direction: row;
 
-    }
 
     .py05 {
         padding: 0.5 0;
@@ -61,7 +47,8 @@
     }
 
 }
+
 .firstHead {
     @extend .regualr-body-m-16-;
-   
+
 }

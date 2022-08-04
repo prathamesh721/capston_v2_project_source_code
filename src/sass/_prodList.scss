@@ -3,16 +3,16 @@
 }
 
 #dropbox {
-  // text-align: end;
-  // margin-right: 1em;
+
   display: flex;
   justify-content: space-between;
-  // padding: 1em;
+
 
   .productResults {
     @extend .regular-heading-m-16-;
   }
-  option{
+
+  option {
     @extend .regualr-body-m-16-;
   }
 }
@@ -36,7 +36,7 @@ a {
 }
 
 .ui.cards>.card>.image {
-  /* height: 250px; */
+
   height: 191px;
   padding: 1.25em;
   background: #fff;

@@ -5251,7 +5251,7 @@ button:hover {
 
 /* Font/text values */
 /* Character Styles */
-.display-xl-48-dekstop-only, .heroBanner .heroInnerBanner, .shoppingCart .shop-head h1 {
+.display-xl-48-dekstop-only, .heroBanner .heroInnerBanner {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600px;
@@ -5261,7 +5261,7 @@ button:hover {
   color: #172026;
 }
 
-.display-l-36-, .homeBanner .homeInnerBanner div h2, .takeoffOuter .takeoffInner h2, .footerBanner .footerBannerInner h2, .prodDetailsText h1, .descDiv .descTitle, .checkout h2, .OrderDiv .OrderHeading h2 {
+.display-l-36-, .homeBanner .homeInnerBanner div h2, .takeoffOuter .takeoffInner h2, .footerBanner .footerBannerInner h2, .shoppingCart .shop-head h1, .prodDetailsText h1, .descDiv .descTitle, .checkout h2, .OrderDiv .OrderHeading h2 {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600px;
@@ -5301,7 +5301,7 @@ button:hover {
   color: #172026;
 }
 
-.regular-heading-l-20-, .shoppingCart .productCartAllItemsDiv .cartProductTitle, .shoppingCart .accordianDiv p, .prodDetailsText .prodDetailsPrice, .descDiv .descLabel, .checkout .checkOutPadding {
+.regular-heading-l-20-, .shoppingCart .productCartAllItemsDiv .cartProductTitle, .shoppingCart .cartSummary h3, .shoppingCart .accordianDiv p, .prodDetailsText .prodDetailsPrice, .descDiv .descLabel, .checkout .checkOutPadding {
   font-family: Muli;
   font-style: normal;
   font-weight: 600px;
@@ -5342,7 +5342,7 @@ button:hover {
 }
 
 .regualr-body-m-16-, header .nav-links a, header .endHeader label,
-header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .sideHeading, .sideBar .py05 label, .firstHead, #dropbox option, .prodDetailsText .desc, .prodDetailsText .textWrapper .text, .prodDetailsText .textWrapper .read-or-hide, .descDiv .desc2, .checkout .pricingSummaryDiv li, .detailsPara, .edit2IconDiv .edit2IconText, .chekoutProdDiv p, .checkoutTerms, .OrderDiv p, .OrderDiv .infoHeading, footer a,
+header .endHeader a, .takeoffOuter .takeoffInner p, .sideBar .sideHeading, .sideBar .py05 label, .firstHead, .shoppingCart .productCartAllItemsDiv .productCartDesc, .shoppingCart .cartSummary li, #dropbox option, .prodDetailsText .desc, .prodDetailsText .textWrapper .text, .prodDetailsText .textWrapper .read-or-hide, .descDiv .desc2, .checkout .pricingSummaryDiv li, .detailsPara, .edit2IconDiv .edit2IconText, .chekoutProdDiv p, .checkoutTerms, .OrderDiv p, .OrderDiv .infoHeading, footer a,
 footer p,
 footer li {
   font-family: Muli;
@@ -5354,7 +5354,7 @@ footer li {
   color: #172026;
 }
 
-.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .checkout .shippingMethodBtn, .chekoutProdBtnDiv .chekoutProdBtn, .footerBanner .footerBannerInner p, .shoppingCart .accordianDiv span, .content, .OrderDiv .infoHeading {
+.regular-body-s-14-, .shopBtn, .homeBanner .homeInnerBanner div button, .takeoffOuter .takeoffInner button, .footerBanner .footerBannerInner .shopDevicesBtn, .checkout .shippingMethodBtn, .chekoutProdBtnDiv .chekoutProdBtn, .footerBanner .footerBannerInner p, .shoppingCart .productCartAllItemsDiv .sharingOption span, .shoppingCart .checkOutBtn, .shoppingCart .accordianDiv span, .content, .OrderDiv .infoHeading {
   font-family: Muli;
   font-style: normal;
   font-weight: normal;
@@ -5507,7 +5507,7 @@ header .endHeader .totalcartitems {
   height: 15px;
   background-color: black;
   border-radius: 50%;
-  padding: 0.25em;
+  padding: 0.125em;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5699,6 +5699,7 @@ header .endHeader .totalcartitems {
 
 .footerBanner .footerBannerInner p {
   color: #FFFFFF;
+  padding: 1em;
 }
 
 .footerBanner .footerBannerInner .shopDevicesBtn {
@@ -5971,10 +5972,11 @@ header .endHeader .totalcartitems {
 
 .shoppingCart .shop-head {
   text-align: center;
+  padding-bottom: 2em;
 }
 
 .shoppingCart .shop-head h1 {
-  padding: 0.25em 0;
+  padding: 0.5em 0;
 }
 
 .shoppingCart .bottom-line {
@@ -6033,6 +6035,10 @@ header .endHeader .totalcartitems {
   max-width: 20ch;
   text-overflow: clip;
   white-space: nowrap;
+}
+
+.shoppingCart .productCartAllItemsDiv .sharingOption span {
+  font-size: 12px;
 }
 
 .shoppingCart .quantityDivCart {
@@ -7252,8 +7258,17 @@ footer .lowerFooter li {
     padding-top: 2em;
   }
   /*============================Shopping Cart ============================*/
+  .productCartAllItemsDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .sharingOption {
     display: none;
+  }
+  .accordianDiv {
+    margin: 2em 0;
   }
   .cartBtn {
     text-align: right;
@@ -7372,9 +7387,9 @@ footer .lowerFooter li {
   /* ==============================Footer===================================*/
   .lowerFooter {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 

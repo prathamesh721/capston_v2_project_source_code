@@ -9,7 +9,6 @@ import Home from "./components/Home";
 import CheckOut from "./components/CheckOut";
 import Order from "./components/Order";
 
-
 function App() {
   return (
     <React.Fragment>
@@ -17,15 +16,27 @@ function App() {
 
       <Routes>
         <Route
-          path="/ezest_assessment_2_v2/product/:productId" exact
+          path="/ezest_assessment_2_v2/product/:productId"
+          exact
           element={<ProductDetails />}
         />
-        <Route path="/ezest_assessment_2_v2/cart" exact element={<ShoppingCart />} />
-        <Route path="/ezest_assessment_2_v2/shop" exact element={<BodyComponent />} />
-        <Route path="/ezest_assessment_2_v2/cart/checkout" exact element={<CheckOut />} />
-        <Route path="/ezest_assessment_2_v2/order" exact element={<Order />}/>
+        <Route
+          path="/ezest_assessment_2_v2/cart"
+          exact
+          element={<ShoppingCart />}
+        />
+        <Route
+          path="/ezest_assessment_2_v2/shop"
+          exact
+          element={<BodyComponent />}
+        />
+        <Route
+          path="/ezest_assessment_2_v2/cart/checkout"
+          exact
+          element={<CheckOut />}
+        />
+        <Route path="/ezest_assessment_2_v2/order" exact element={<Order />} />
         <Route path="/" exact element={<Home />} />
-        
       </Routes>
 
       <Footer />

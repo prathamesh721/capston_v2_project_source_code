@@ -1,24 +1,17 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import logo from "../Assets/Logo.PNG";
-import search from "../Assets/Icons/search.svg";
 import user from "../Assets/Icons/user.svg";
 import shoppingBag from "../Assets/IconCopy/shopping-bag.svg";
 
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  // //Cart Related code v2
-  //  const cartTotalQuantity = useSelector(state => state.handlecartSlice.cartTotalQuantity)
-
-
   //Cart Related Code v1
   const cart = useSelector((state) => {
     return state.handlecartSlice.items;
   });
 
   const totalcartitem = cart.length;
-  // console.log(totalcartitem);
 
   //For collaspible Navigation
   const [isActive, setActive] = useState(false);
@@ -38,24 +31,28 @@ const Header = () => {
     <React.Fragment>
       <header role="banner" id="header">
         <div className="headerOuter">
-          <button aria-label="Toggle Navigation" className="burger" onClick={navSlide}>
+          <button
+            aria-label="Toggle Navigation"
+            className="burger"
+            onClick={navSlide}
+          >
             <div id="line1"></div>
             <div id="line2"></div>
             <div id="line3"></div>
           </button>
 
           <a href="/ezest_assessment_2_v2">
-            {/* <img src={logo} className={displayIn ? "hideLogo" : "logo"} alt='brand logo' /> */}
-            <Link to='/'><p className={displayIn ? "hideLogo" : "logo"} alt='brand logo'>VENIA</p></Link>
+            <Link to="/">
+              <p className={displayIn ? "hideLogo" : "logo"} alt="brand logo">
+                VENIA
+              </p>
+            </Link>
           </a>
 
           <nav role="navigation">
             <ul className={isActive ? "nav-links nav-active" : "nav-links"}>
               <b>
-                <li
-                  aria-label="See Shop Categories"
-                  className="desktopHide"
-                >
+                <li aria-label="See Shop Categories" className="desktopHide">
                   Shop Categories
                 </li>
               </b>
@@ -86,7 +83,7 @@ const Header = () => {
               </li>
 
               <div className="bottomLinks desktopHide">
-                <img src={user} alt='User Account' />
+                <img src={user} alt="User Account" />
                 <a href="#" aria-label="See User Account">
                   Account
                 </a>
@@ -98,34 +95,17 @@ const Header = () => {
           </nav>
 
           <div className="endHeader">
-            {/* <input
-              className={displayIn ? "" : "hideInput"}
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              id="inputSearch"
-              role='search'
-            />
-            <button
-              onClick={hideInput}
-              aria-label="Click to search products"
-              className="btn"
+            <Link
+              to="/ezest_assessment_2_v2/cart"
+              aria-label="Click to see shopping cart"
             >
-              <img src={search} alt='Search button' />
-            </button> */}
-
-            {/* <label for="searchBar" className="mobileHide">
-              Search
-            </label>
-            <img src={user} alt='Sign in' className="mobileHide" />
-            <a href="#" aria-label="Go to Sign in" className="mobileHide">
-              Sign in
-            </a> */}
-
-            <Link to="/ezest_assessment_2_v2/cart" aria-label="Click to see shopping cart">
-              <img src={shoppingBag} alt='shopping cart' className="shoppingBagImg" />
+              <img
+                src={shoppingBag}
+                alt="shopping cart"
+                className="shoppingBagImg"
+              />
             </Link>
-            {/* <span>{cartTotalQuantity}</span> */}
+
             <span className="totalcartitems">{totalcartitem}</span>
           </div>
         </div>

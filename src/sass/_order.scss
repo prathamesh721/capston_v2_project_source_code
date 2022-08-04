@@ -1,54 +1,59 @@
-.OrderDiv{
+.OrderDiv {
     padding: 0 0 3em 0;
-    .OrderHeading{
-        
-        h2{
+
+    .OrderHeading {
+
+        h2 {
             @extend .display-l-36-;
         }
     }
-    .orderNumber{
+
+    .orderNumber {
         @extend .display-s-20-;
     }
-    
-    p{
+
+    p {
         @extend .regualr-body-m-16-;
         color: $gray-d1;
     }
 
-    .infoHeading{
+    .infoHeading {
         @extend .regualr-body-m-16-;
-        
+
         color: $unnamed-color-172026;
-         font-weight: bold;
+        font-weight: bold;
     }
-    .paddingLeft1em{
+
+    .paddingLeft1em {
         padding-left: 1em;
     }
-    .OrderHeading{
-      text-align: center;
-      padding: 1.5em 0;
+
+    .OrderHeading {
+        text-align: center;
+        padding: 1.5em 0;
     }
-    
-    h3{
+
+    h3 {
         @extend .regular-body-l-20-;
     }
-    .infoHeading{
+
+    .infoHeading {
         @extend .regular-body-s-14-;
         color: $unnamed-color-172026;
-        // font-weight: bold;
+
     }
 
-    .productDesc{
+    .productDesc {
         display: flex;
 
-        img{
+        img {
             width: 20%;
             height: 5rem;
             padding-right: 0.75em;
         }
     }
 
-    .boxDiv{ 
+    .boxDiv {
         position: relative;
         height: 12rem;
         width: 15rem;
@@ -56,25 +61,27 @@
         border-radius: 0.125rem;
         text-align: center;
         padding: 1.5em 1em 0 1em;
-       
-        p{
+
+        p {
             @extend .display-m-24-;
             color: $white;
         }
-        .iconDiv{
+
+        .iconDiv {
             width: 100%;
             position: absolute;
             bottom: 10%;
             left: 50%;
             transform: translateX(-50%);
 
-            img{
+            img {
                 padding: 0 1em;
-                
+
             }
         }
     }
-    .orderTitle{
+
+    .orderTitle {
         overflow: hidden;
         max-width: 10rem;
         white-space: nowrap;

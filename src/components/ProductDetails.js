@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addProdToCart, increaseCart, decreaseCart } from "../redux/cartSlice";
+import { addProdToCart } from "../redux/cartSlice";
 import LoadingSpinner from "./LoadingSpinner";
 import SimpleImageSlider from "react-simple-image-slider";
-
 import share2 from "../Assets/Icons/share-2.svg";
 import heart from "../Assets/Icons/heart.svg";
-// import maxHeader from '../Assets/max-width_header.svg'
 import MaxWidthHeader from "./MaxWidthHeader";
-
 
 //This component shows individual product
 
@@ -35,14 +32,12 @@ const ProductDetails = () => {
       });
   }, []);
 
-
   const images = [
     { url: selectedProduct.image },
     { url: selectedProduct.image },
     { url: selectedProduct.image },
     { url: selectedProduct.image },
-    { url: selectedProduct.image }
-
+    { url: selectedProduct.image },
   ];
 
   //Read More text logic
@@ -51,9 +46,6 @@ const ProductDetails = () => {
   const toggleReadMore = () => {
     setIsReadMore(!isReadMore);
   };
-
-
-
 
   return (
     <div className="aem-Grid aem-Grid--12 container">
@@ -66,17 +58,36 @@ const ProductDetails = () => {
                 {/* Group of 5 images */}
 
                 <div className="imgCarousal">
-                  <img className="ProdImg" src={selectedProduct.image} alt={selectedProduct.title} />
-                  <img className="ProdImg" src={selectedProduct.image} alt={selectedProduct.title} />
-                  <img className="ProdImg" src={selectedProduct.image} alt={selectedProduct.title} />
-                  <img className="ProdImg" src={selectedProduct.image} alt={selectedProduct.title} />
-                  <img className="ProdImg" src={selectedProduct.image} alt={selectedProduct.title} />
+                  <img
+                    className="ProdImg"
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
+                  <img
+                    className="ProdImg"
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
+                  <img
+                    className="ProdImg"
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
+                  <img
+                    className="ProdImg"
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
+                  <img
+                    className="ProdImg"
+                    src={selectedProduct.image}
+                    alt={selectedProduct.title}
+                  />
                 </div>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ProdImgDivParent">
                 <div className="ProdImgDiv">
                   <SimpleImageSlider
-
                     width={290}
                     height={320}
                     images={images}
@@ -86,10 +97,6 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
 
           <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 prodDetailsText">
@@ -126,8 +133,8 @@ const ProductDetails = () => {
                 ADD TO CART
               </button>
               <div className="AddToCartWrapperInner">
-                <img src={heart} alt='heart icon' />
-                <img src={share2} alt='sharing icon' />
+                <img src={heart} alt="heart icon" />
+                <img src={share2} alt="sharing icon" />
               </div>
             </div>
           </div>
@@ -140,7 +147,7 @@ const ProductDetails = () => {
 
             <div className="py-1 maxHeaderInProdDetails">
               {/* <img src={maxHeader} alt='horizontal line for styling' className="maxHeaderInProdDetails" /> */}
-              <MaxWidthHeader heightFor={'8'} widthFor={'102'}/>
+              <MaxWidthHeader heightFor={"8"} widthFor={"102"} />
             </div>
           </div>
         </div>

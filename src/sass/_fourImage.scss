@@ -1,27 +1,26 @@
-.fourImgComp{
+.fourImgComp {
     padding: 0.5em 0;
-    
-   text-align: center;
-   position: relative;
-   
-   display: flex;
+
+    text-align: center;
+    position: relative;
+
+    display: flex;
     align-items: center;
-   justify-content: center;
-   background-color: $white;
-   
-    img{
+    justify-content: center;
+    background-color: $white;
+
+    img {
         width: 30rem;
         max-width: 85%;
         height: 12rem;
-     
-            
-    }
-   
 
-    .fourImgBanner{
-      
+
+    }
+
+
+    .fourImgBanner {
+
         text-align: left;
-        // background-color: #0000009f;
         background: #1B252CD9 0% 0% no-repeat padding-box;
         color: $white;
         padding: 1em;
@@ -30,9 +29,10 @@
         border-bottom: 10px solid $primary-brand;
         max-width: 400px;
 
-        h3, p{
+        h3,
+        p {
             opacity: 1;
         }
-        
+
     }
 }
