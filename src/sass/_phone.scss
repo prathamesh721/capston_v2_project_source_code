@@ -387,8 +387,14 @@
 
   /*============================Shopping Cart ============================*/
 
+  .productCartAllItemsDiv{
+    flex-direction: column;
+  }
   .sharingOption {
     display: none;
+  }
+  .accordianDiv{
+    margin: 2em 0;
   }
 
   .cartBtn {
