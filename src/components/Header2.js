@@ -62,24 +62,24 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="See women products">
+                <Link to="/ezest_assessment_2_v2/shop" aria-label="See women products">
                   Women
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" aria-label="See men products">
+                <Link to="/ezest_assessment_2_v2/shop" aria-label="See men products">
                   Men
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" aria-label="See electronic products">
+                <Link to="/ezest_assessment_2_v2/shop" aria-label="See electronic products">
                   Electronics
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" aria-label="See Jewellery">
+                <Link to="/ezest_assessment_2_v2/shop" aria-label="See Jewellery">
                   Jewellery
-                </a>
+                </Link>
               </li>
 
               <div className="bottomLinks desktopHide">

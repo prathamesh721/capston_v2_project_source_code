@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import crosscircle from "../Assets/Icons/x-circle.svg";
 
-function Sidebar({ showsidebar, sidebarTogglecopy, filterProduct }) {
+function Sidebar({
+  showsidebar,
+  sidebarTogglecopy,
+  filterProduct,
+  categories,
+}) {
   const sidebarToggle = () => {
     sidebarTogglecopy(!showsidebar);
   };
-
-  const [isSelected, setisSelected] = useState(false);
 
   const [data, setData] = useState([]);
 
@@ -45,24 +48,50 @@ function Sidebar({ showsidebar, sidebarTogglecopy, filterProduct }) {
         <p className="sideHeading">Categories</p>
 
         <div className="py-1">
-          {data.map((category) => {
-            return (
-              <React.Fragment>
-                <div className="py05">
-                  <input
-                    type="checkbox"
-                    aria-label="checkbox"
-                    onClick={() => {
-                      setisSelected(!isSelected);
-                      filterProduct({ category });
-                    }}
-                  />
+          <React.Fragment>
+            <div className="py05">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="electronics"
+                onChange={filterProduct}
+                checked={categories.electronics}
+              />
+              <label htmlFor=""> Electronics</label>
+            </div>
+            <div className="py05">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="jewelery"
+                onChange={filterProduct}
+                checked={categories.jewelery}
+              />
+              <label htmlFor=""> Jewelery</label>
+            </div>
+            <div className="py05">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="men's clothing"
+                onChange={filterProduct}
+                checked={categories["men's clothing"]}
+              />
+              <label htmlFor=""> Men's Clothing</label>
+            </div>
+            <div className="py05">
+              <input
+                type="checkbox"
+                id="chk2-label"
+                name="women's clothing"
+                onChange={filterProduct}
+                checked={categories["women's clothing"]}
+              />
+              <label htmlFor=""> Women's Clothing</label>
+            </div>
+          </React.Fragment>
 
-                  <label>&nbsp;{category}</label>
-                </div>
-              </React.Fragment>
-            );
-          })}
+          {/* })} */}
         </div>
 
         <div className="borderBottom"></div>

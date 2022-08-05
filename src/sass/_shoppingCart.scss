@@ -197,9 +197,10 @@
     }
 
     .accordianDiv {
+        margin: 3em 0;
         border: 1px solid gray;
         padding: 0;
-        margin-bottom: 3em;
+       
 
         .accoBorder1 {
             border-bottom: 1px solid gray;
@@ -229,4 +230,7 @@
 
 
     }
+     // .accordianDiv {
+  //   margin: 2em 0;
+  // }
 }

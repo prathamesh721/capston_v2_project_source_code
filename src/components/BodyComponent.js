@@ -10,6 +10,20 @@ const BodyComponent = () => {
   const [sidebartoggle, setsidebartoggle] = useState(true);
   const [data, setData] = useState([]);
   const [products, setProducts] = useState([]);
+  const [filter, setFilter] = useState(data);
+  const [categories, setCategories] = useState({
+    electronics: false,
+    jewelery: false,
+    "men's clothing": false,
+    "women's clothing": false,
+  });
+
+  const handleChange = (e) => {
+    const { name } = e.target;
+    setCategories(() => {
+      return { ...categories, [name]: !categories[name] };
+    });
+  };
 
   const fetchProducts = async () => {
     setIsLoading(true);
@@ -21,6 +35,7 @@ const BodyComponent = () => {
       });
 
     setProducts(response.data);
+    setFilter(response.data);
     setData(response.data);
     setIsLoading(false);
   };
@@ -29,11 +44,11 @@ const BodyComponent = () => {
     fetchProducts();
   }, []);
 
-  const filterProduct = (cat) => {
-    const updatedList = data.filter((x) => x.category === cat.category);
-    console.log("men's clothing", updatedList);
-    setProducts(updatedList);
-  };
+  // const filterProduct = (cat) => {
+  //   const updatedList = data.filter((x) => x.category === cat.category);
+  //   console.log("men's clothing", updatedList);
+  //   setProducts(updatedList);
+  // };
 
   const [sort, setSort] = useState();
 
@@ -49,6 +64,13 @@ const BodyComponent = () => {
     setsidebartoggle(!sidebartoggle);
   };
 
+  const checkedProducts = Object.entries(categories)
+    .filter((category) => category[1])
+    .map((category) => category[0]);
+  const filteredProducts = data.filter(({ category }) =>
+    checkedProducts.includes(category)
+  );
+
   return (
     <div className="bodyComponent">
       <HeroBanner />
@@ -59,7 +81,12 @@ const BodyComponent = () => {
         <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
           <div>
             <div id="dropbox">
-              <span className="productResults">{products.length} Results</span>
+              <span className="productResults">
+                {filteredProducts.length === 0
+                  ? filter.length
+                  : filteredProducts.length}{" "}
+                Results
+              </span>
               <div className="produFilters">
                 <div onClick={sidebarTogglefunc} className="desktopHide">
                   <img src={slider} alt="slider icon" />
@@ -83,14 +110,16 @@ const BodyComponent = () => {
           <SideBar
             sidebarTogglecopy={setsidebartoggle}
             showsidebar={sidebartoggle}
-            filterProduct={filterProduct}
+            filterProduct={handleChange}
+            categories={categories}
           />
         </div>
 
         <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
           <ProductPage
-            products={products}
-            onfilterChange={onfilterChange}
+            // products={products}
+            products={filteredProducts.length === 0 ? filter : filteredProducts}
+            onfilterChange={handleChange}
             isLoading={isLoading}
           />
         </div>
