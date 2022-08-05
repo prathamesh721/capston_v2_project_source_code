@@ -13,7 +13,7 @@ import shopJewellery from "../Assets/shopJewellery.jpg";
 import shopElectronics from "../Assets/shopElectronics.jpg";
 const Home = () => {
   return (
-    <section>
+    <section className="containerForDesktop">
       {/* ==============================Home Banner starts=================== */}
       <div className="homeBanner">
         <span className="homeInnerBanner">

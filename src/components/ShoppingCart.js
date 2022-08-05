@@ -67,10 +67,10 @@ function ShoppingCart() {
           <div className="aem-Grid aem-Grid--12 shoppingBagWrapper container">
             {/* ==============8 column inner grid starts==========*/}
             <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 leftSideCart">
-              {shoppingbagitem.map((val) => {
+              {shoppingbagitem.map((val, index) => {
                 return (
                   <React.Fragment>
-                    <div className="aem-Grid aem-Grid--12 productCartAllItemsDiv">
+                    <div className="aem-Grid aem-Grid--12 productCartAllItemsDiv" key={index}>
                       <div className="shopping-cart aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
                         <img
                           src={val.image}

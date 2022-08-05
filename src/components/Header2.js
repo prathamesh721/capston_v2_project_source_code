@@ -41,13 +41,13 @@ const Header = () => {
             <div id="line3"></div>
           </button>
 
-          <a href="/ezest_assessment_2_v2">
+          
             <Link to="/">
               <p className={displayIn ? "hideLogo" : "logo"} alt="brand logo">
                 VENIA
               </p>
             </Link>
-          </a>
+          
 
           <nav role="navigation">
             <ul className={isActive ? "nav-links nav-active" : "nav-links"}>
@@ -62,7 +62,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <Link to="/ezest_assessment_2_v2/shop" aria-label="See women products">
+                <Link className="activeLink" to="/ezest_assessment_2_v2/shop" aria-label="See women products">
                   Women
                 </Link>
               </li>

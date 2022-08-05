@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer role="contentinfo">
-      <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
+      <div className="aem-Grid aem-Grid--12">
+        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
           <ul>
             <li>
               <a href="#" aria-label="Go to user account">
@@ -32,7 +32,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 ">
+        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12 ">
           <ul>
             <li>
               <a href="#" aria-label="Visit about us page">
@@ -52,7 +52,7 @@ const Footer = () => {
             <li style={{ visibility: "hidden" }}>hide</li>
           </ul>
         </div>
-        <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
+        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
           <ul>
             <li>
               <a href="#" aria-label="Find help from us">
@@ -76,7 +76,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
+        <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
           <ul>
             <li>
               <a href="#" aria-label="Follow us on social media">

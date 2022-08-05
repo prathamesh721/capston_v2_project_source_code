@@ -21,7 +21,7 @@ function Sidebar({
       .then((data) => {
         setData(data);
       });
-    console.log(data);
+    
   };
 
   useEffect(() => {
